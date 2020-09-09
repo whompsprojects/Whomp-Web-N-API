@@ -1,0 +1,8 @@
+E:\MyJob\RND\Whomps\WhompsWebSite\Code\Whomps\BAL\bin\Debug\BAL.dll
+E:\MyJob\RND\Whomps\WhompsWebSite\Code\Whomps\BAL\bin\Debug\BAL.pdb
+E:\MyJob\RND\Whomps\WhompsWebSite\Code\Whomps\BAL\obj\Debug\BAL.csprojResolveAssemblyReference.cache
+E:\MyJob\RND\Whomps\WhompsWebSite\Code\Whomps\BAL\obj\Debug\BAL.dll
+E:\MyJob\RND\Whomps\WhompsWebSite\Code\Whomps\BAL\obj\Debug\BAL.pdb
+E:\MyJob\RND\Whomps\WhompsWebSite\Code\Whomps\BAL\bin\Debug\DAL.dll
+E:\MyJob\RND\Whomps\WhompsWebSite\Code\Whomps\BAL\bin\Debug\Microsoft.ApplicationBlocks.Data.dll
+E:\MyJob\RND\Whomps\WhompsWebSite\Code\Whomps\BAL\bin\Debug\DAL.pdb

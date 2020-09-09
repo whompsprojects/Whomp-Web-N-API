@@ -1,0 +1,92 @@
+/*
+ * bootstrap-tagsinput v1.8.0
+    Edited by    : Prabir Biswas
+    Resion       : For adding own custom style
+    date         : 31/01/2018
+ * 
+ */
+.bootstrap-tagsinput {
+    padding: 7px 30px 7px 7px;
+    background:#8a8b8f;
+    color: #fff;
+    width: 100%;
+    float: left;
+    border: 0px;
+    font-size: 12px;
+    border-radius: 5px;
+    max-width: 100%;
+    min-width:98px;
+    transition: all 0.2s ease;
+}
+.bootstrap-tagsinput input {
+  border: none;
+  color: #fff;
+  box-shadow: none;
+  outline: none;
+  text-transform: capitalize;
+  background-color: transparent;
+  padding: 0 6px;
+  margin: 0;
+  width: auto;
+  max-width: inherit;
+}
+/*.bootstrap-tagsinput input::-moz-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+.bootstrap-tagsinput input:-ms-input-placeholder {
+  color: #fff;
+}
+.bootstrap-tagsinput input::-webkit-input-placeholder {
+  color: #fff;
+}*/
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #fff;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #fff;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #fff;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #fff;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #fff;
+}
+.bootstrap-tagsinput input::-moz-placeholder { /* Firefox 19+ */
+  color: #fff;
+}
+.bootstrap-tagsinput input:-ms-input-placeholder { /* IE 10+ */
+  color: #fff;
+}
+.bootstrap-tagsinput input:-moz-placeholder { /* Firefox 18- */
+  color: #fff;
+}
+
+
+
+.bootstrap-tagsinput input:focus {
+  border: none;
+  box-shadow: none;
+}
+.bootstrap-tagsinput .tag {
+  margin-right: 2px;
+  color: white;
+}
+.bootstrap-tagsinput .tag [data-role="remove"] {
+  margin-left: 8px;
+  cursor: pointer;
+}
+.bootstrap-tagsinput .tag [data-role="remove"]:after {
+  content: "x";
+  padding: 0px 2px;
+}
+.bootstrap-tagsinput .tag [data-role="remove"]:hover {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+.bootstrap-tagsinput .tag [data-role="remove"]:hover:active {
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}

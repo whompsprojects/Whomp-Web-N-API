@@ -1,0 +1,1826 @@
+﻿@inherits System.Web.Mvc.WebViewPage
+@{
+    ViewBag.Title = "Create Website";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="~/Content/Images/favicon_io/favicon.ico" type="image/x-icon" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Whomps</title>
+
+    <!--=============== start of css ===============-->
+    <link href="~/Content/WebsiteCSS/bootstrap.min.css" rel="stylesheet" type="text/css">
+    @*<link href="~/Content/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />*@
+    @*<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">*@
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="~/Content/WebsiteCSS/whompWebPortfolio.min.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/WebsiteCSS/whompWebNivo-lightbox.css" rel="stylesheet" />
+    <link href="~/Content/WebsiteCSS/whompWebNivo-lightbox-themeDefault.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/CssLibrary/owl.carousel.css" rel="stylesheet" media="screen" />
+    <link href="~/Content/CssLibrary/owl.theme.css" rel="stylesheet" media="screen" />
+    <link href="~/Content/WebsiteCSS/whompWebAnimate.css" rel="stylesheet" />
+    <link href="~/Content/WebsiteCSS/whompWebStyle.css" rel="stylesheet">
+    <link href="~/Content/WebsiteCSS/whompWebCommon.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/CssLibrary/CommonCSS.css" rel="stylesheet" type="text/css" />
+    <!-- boxed bg -->
+    <link id="bodybg" href="~/Content/WebsiteCSS/Theme/default.css" rel="stylesheet" type="text/css" />
+    <!-- template skin -->
+    <link id="t-colors" href="~/Content/WebsiteCSS/whompWebDefault.css" rel="stylesheet">
+    <!--=============== end of css ===============-->
+    <script>
+        var save_url = "@Url.Action("AddEditWebsite", "Website")";
+         var objWebViewData = @Html.Raw(Json.Encode(@ViewBag.WebViewData));
+        var WebIsAdd = "@ViewBag.WebIsAdd";
+        var VB_Web_ID = "@ViewBag.Web_ID";
+        var VB_WebIsView = "@ViewBag.VB_WebIsView";
+         var registerUrl = "@Url.Action("Login", "Account")";
+        var VB_Theme =  @Html.Raw(Json.Encode(@ViewBag.VB_Theme));
+    </script>
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+    @*<%--========================================Start of Processing==================================--%>*@
+    <div id="processing-bar-holder" class="clearfix processing-bar-holder in">
+        <div class="processing-bar">
+            <i class="fa fa-spinner fa-spin"></i><span>&nbsp;&nbsp;Processing</span>
+        </div>
+    </div>
+    <div class="modaloverlay" id="modaloverlay" style="display: block;">
+    </div>
+    @*<%--========================================End of Processing==================================--%>*@
+    <div id="wrapper">
+        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+            <div class="top-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6">
+                            <p class="bold text-left">
+                                <span id="span_Timing_Detail">Monday - Friday, 11am to 7pm</span>
+                                <a class="cls_EditWeb cls_Hdr" id='a_Timing_Detail'><i class='fa fa-edit'></i></a>
+                            </p>
+                        </div>
+                        <div class="col-sm-6 col-md-6">
+                            <p class="bold text-right">
+                                <span id="span_Contact_Detail">Call us now +75 06 539510</span>
+                                <a class="cls_EditWeb cls_Hdr" id='a_Contact_Detail'><i class='fa fa-edit'></i></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container navigation">
+
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <img id="img_Logo" src="../Content/Images/WebsiteCreation/Whomps_1/Hdr/Logo.png" alt="../Content/Images/no-image.jpg" class="img cls_logo" />
+                        <input id="file_UploadLogo" type="file" accept="image/*" data-type="image" style="display:none;" />
+                    </a>
+                    <a class="cls_EditWeb" id='a_Edit_Logo'><i class='fa fa-edit'></i></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                    <ul class="nav navbar-nav" id="ul_Menu">
+                        <li isUsed="1" class="active"><a href="#intro">Home</a></li>
+                        <li isUsed="1"><a href="#product">Solution</a></li>
+                        <li isUsed="1"><a href="#team">Expert</a></li>
+                        <li isUsed="1"><a href="#facilities">Facilities</a></li>
+                        <li isUsed="1"><a href="#pricing">Pricing</a>
+                        <li isUsed="0" class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="badge custom-badge red pull-right">Extra</span>More<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li isUsed="1" subLi="1"><a href="index.html">Home form</a></li>
+                                <li isUsed="1" subLi="1"><a href="index-video.html">Home video</a></li>
+                                <li isUsed="1" subLi="1"><a href="index-cta.html">Home CTA</a></li>
+                            </ul>
+                        </li>
+                        <li isUsed="0"><a class="cls_EditWeb" id='a_Edit_Menu'><i class='fa fa-edit'></i></a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+
+
+        <!-- Section: intro -->
+        <section id="intro" class="intro">
+            <div class="intro-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <a class="cls_EditWeb" id='a_Edit_Hdr_BkGrnd_Img'><i class='fa fa-edit'></i></a>
+                            <input id="file_Hdr_BkGrnd_Img" type="file" accept="image/*" data-type="image" style="display:none;" />
+                            <img src="" id="img_Hdr_BkGrnd_Img" class="img-responsive" alt="../Content/Images/no-image.jpg" style="display:none;" />
+                            <div class="wow fadeInDown" data-wow-offset="0" data-wow-delay="0.1s">
+                                <h2 class="h-ultra">
+                                    <span id="span_Slogan_H1">Whomps IT group</span>
+                                    <a class="cls_EditWeb cls_Hdr" id='a_Slogan_H1'><i class='fa fa-edit'></i></a>
+                                </h2>
+                            </div>
+                            <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.1s">
+                                <h4 class="h-light">
+                                    <span id="span_Slogan_H2">Provide <span class="color">best quality IT solution</span> for you</span>
+                                    <a class="cls_EditWeb cls_Hdr" id='a_Slogan_H2'><i class='fa fa-edit'></i></a>
+                                </h4>
+                            </div>
+                            <div class="well well-trans">
+                                @*//--==>Start of Slogan*@
+                                <div class="wow fadeInRight" data-wow-delay="0.1s">
+                                    <a class="cls_EditWeb cls_Absolute" id='a_EditSlogan'><i class='fa fa-edit'></i></a>
+                                    <ul class="lead-list" id="ul_Slogan">
+                                        <li><span class="fa fa-check fa-2x icon-success"></span> <span class="list"><strong id="strong_SloganHdr_1">Affordable monthly premium</strong><br /><span id="span_SloganDet_1">We have many solution in field of BMS,E-Com</span></span></li>
+                                        <li><span class="fa fa-check fa-2x icon-success"></span> <span class="list"><strong id="strong_SloganHdr_2">Get best solution for complex operation</strong><br /><span id="span_SloganDet_2">We have professional in technology sector</span></span></li>
+                                        <li><span class="fa fa-check fa-2x icon-success"></span> <span class="list"><strong id="strong_SloganHdr_3">Only use friendly & qualtity environment</strong><br /><span id="span_SloganDet_3">Friendly environment with both client & employess</span></span></li>
+                                    </ul>
+                                </div>
+                                @*//--==>End of Slogan*@
+                            </div>
+
+
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-wrapper">
+                                <div class="wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.2s">
+
+                                    <div class="panel panel-skin">
+                                        <div class="panel-heading">
+                                            <h3 class="panel-title">
+                                                <span id="span_Fields_Hdr">Generate a Quote <small>(It's free!)</small></span>
+                                                <a class="cls_EditWeb cls_Hdr" id='a_Fields_Hdr'><i class='fa fa-edit'></i></a>
+                                            </h3>
+                                        </div>
+                                        <div class="panel-body">
+                                            <form role="form" class="lead" id="form_Field">
+                                                <div class="row">
+                                                    <div class="col-xs-6 col-sm-6 col-md-6">
+                                                        <div class="form-group">
+                                                            <label id="lbl_FieldKey_1">First Name</label>
+                                                            <input id="txt_FieldValue_1" type="text" name="first_name" class="form-control input-md">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-6 col-sm-6 col-md-6">
+                                                        <div class="form-group">
+                                                            <a class="cls_EditWeb cls_Absolute" id='a_Edit_Field'><i class='fa fa-edit'></i></a>
+                                                            <label id="lbl_FieldKey_2">Last Name</label>
+                                                            <input id="txt_FieldValue_2" type="text" name="last_name" class="form-control input-md">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-xs-6 col-sm-6 col-md-6">
+                                                        <div class="form-group">
+                                                            <label id="lbl_FieldKey_3">Email</label>
+                                                            <input id="txt_FieldValue_3" type="email" name="email" class="form-control input-md">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-6 col-sm-6 col-md-6">
+                                                        <div class="form-group">
+                                                            <label id="lbl_FieldKey_4">Phone number</label>
+                                                            <input id="txt_FieldValue_4" type="text" name="phone" class="form-control input-md">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <input id="btn_SubmitLead" type="submit" value="Submit" class="btn btn-skin btn-block btn-lg disabled">
+                                                <p class="lead-footer">* We'll contact you by phone & email later</p>
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /Section: intro -->
+        <!-- Section: boxes -->
+        <section id="boxes" class="home-section paddingtop-80">
+
+            <div class="container">
+                @*//--==>Start of Oper_Flow*@
+                <div class="row" id="div_Oper_Flow">
+                    <div class="col-sm-3 col-md-3">
+                        <a class="cls_EditWeb" id='a_EditOper_Flow'><i class='fa fa-edit'></i></a>
+                        <div class="wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="box text-center">
+                                <i class="fa fa-check fa-3x circled bg-skin" id="i_Oper_FlowIcon_1"></i>
+                                <h4 class="h-bold" id="h4_Oper_FlowHdr_1">Generate a Quote</h4>
+                                <p id="p_Oper_FlowDet_1">
+                                    Lorem ipsum dolor sit amet, nec te mollis utroque honestatis, ut utamur molestiae vix, graecis eligendi ne.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-md-3">
+                        <div class="wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="box text-center">
+
+                                <i class="fa fa-list-alt fa-3x circled bg-skin" id="i_Oper_FlowIcon_2"></i>
+                                <h4 class="h-bold" id="h4_Oper_FlowHdr_2">Choose your package</h4>
+                                <p id="p_Oper_FlowDet_2">
+                                    Lorem ipsum dolor sit amet, nec te mollis utroque honestatis, ut utamur molestiae vix, graecis eligendi ne.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-md-3">
+                        <div class="wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="box text-center">
+                                <i class="fa fa-user-md fa-3x circled bg-skin" id="i_Oper_FlowIcon_3"></i>
+                                <h4 class="h-bold" id="h4_Oper_FlowHdr_3">Help by specialist</h4>
+                                <p id="p_Oper_FlowDet_3">
+                                    Lorem ipsum dolor sit amet, nec te mollis utroque honestatis, ut utamur molestiae vix, graecis eligendi ne.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-md-3">
+                        <div class="wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="box text-center">
+                                <i class="fa fa-hospital-o fa-3x circled bg-skin" id="i_Oper_FlowIcon_4"></i>
+                                <h4 class="h-bold" id="h4_Oper_FlowHdr_4">Get POC</h4>
+                                <p id="p_Oper_FlowDet_4">
+                                    Lorem ipsum dolor sit amet, nec te mollis utroque honestatis, ut utamur molestiae vix, graecis eligendi ne.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @*//--==>End of Oper_Flow*@
+            </div>
+
+        </section>
+        <!-- /Section: boxes -->
+
+
+        <section id="callaction" class="home-section paddingtop-40">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="callaction bg-gray">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="wow fadeInUp" data-wow-delay="0.1s">
+                                        <div class="cta-text">
+                                            <h3><span id="span_Emergency_Hdr_Desc">In an emergency? Need help now?</span><a class="cls_EditWeb cls_Hdr" id='a_Emergency_Hdr_Desc'><i class='fa fa-edit'></i></a></h3>
+                                            <p><span id="span_Emergency_Desc">Lorem ipsum dolor sit amet consectetur adipiscing elit uisque interdum ante eget faucibus. </span><a class="cls_EditWeb cls_Hdr" id='a_Emergency_Desc'><i class='fa fa-edit'></i></a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="wow lightSpeedIn" data-wow-delay="0.1s">
+                                        <div class="cta-btn">
+                                            <a href="#" class="btn btn-skin btn-lg" id="span_EmergencyBtn_Desc">Book an appoinment</a>
+                                            <a class="cls_EditWeb cls_Hdr" id='a_EmergencyBtn_Desc'><i class='fa fa-edit'></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Section: Product -->
+        <section id="product" class="home-section nopadding paddingtop-60">
+            @*//--==>Start of Product*@
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-6">
+                        <div class="wow fadeInUp" data-wow-delay="0.2s">
+                            <a class="cls_EditWeb cls_Absolute" id='a_Edit_Product_Hdr_Img_Path'><i class='fa fa-edit'></i></a>
+                            <img src="../Content/Images\WebsiteCreation\Whomps_1\Hdr/product_hdr.jpg" id="img_Product_Hdr" class="img-responsive img_ProdHdr" alt="" />
+                            <input id="file_UploadProductHdrImg" type="file" accept="image/*" data-type="image" style="display:none;" />
+                        </div>
+                    </div>
+
+                    <div id="div_Product_Main">
+                        <div class="col-sm-3 col-md-3" id="div_Product_Lst_1">
+                            <div class="wow fadeInRight row" data-wow-delay="0.1s">
+                                <div class="service-box">
+                                    <div class="service-icon">
+                                        <span class="fa fa-stethoscope fa-3x" id="span_Product_Icon_1"></span>
+                                    </div>
+                                    <div class="service-desc">
+                                        <h5 class="h-light" id="h5_ProductHDR_1">Medical checkup</h5>
+                                        <p id="p_ProductDet_1">Vestibulum tincidunt enim in pharetra malesuada.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="wow fadeInRight row" data-wow-delay="0.2s">
+                                <div class="service-box">
+                                    <div class="service-icon">
+                                        <span class="fa fa-wheelchair fa-3x" id="span_Product_Icon_2"></span>
+                                    </div>
+                                    <div class="service-desc">
+                                        <h5 class="h-light" id="h5_ProductHDR_2">Nursing Services</h5>
+                                        <p id="p_ProductDet_2">Vestibulum tincidunt enim in pharetra malesuada.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wow fadeInRight row" data-wow-delay="0.3s">
+                                <div class="service-box">
+                                    <div class="service-icon">
+                                        <span class="fa fa-plus-square fa-3x" id="span_Product_Icon_3"></span>
+                                    </div>
+                                    <div class="service-desc">
+                                        <h5 class="h-light" id="h5_ProductHDR_3">Pharmacy</h5>
+                                        <p id="p_ProductDet_3">Vestibulum tincidunt enim in pharetra malesuada.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-3 col-md-3" id="div_Product_Lst_2">
+                            <div class="wow fadeInRight row" data-wow-delay="0.1s">
+                                <div class="service-box">
+                                    <div class="service-icon">
+                                        <span class="fa fa-h-square fa-3x" id="span_Product_Icon_4"></span>
+                                    </div>
+                                    <div class="service-desc">
+                                        <a class="cls_EditWeb cls_Absolute" id='a_Products'><i class='fa fa-edit'></i></a>
+                                        <h5 class="h-light" id="h5_ProductHDR_4">Gyn Care</h5>
+                                        <p id="p_ProductDet_4">Vestibulum tincidunt enim in pharetra malesuada.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="wow fadeInRight row" data-wow-delay="0.2s">
+                                <div class="service-box">
+                                    <div class="service-icon">
+                                        <span class="fa fa-filter fa-3x" id="span_Product_Icon_5"></span>
+                                    </div>
+                                    <div class="service-desc">
+                                        <h5 class="h-light" id="h5_ProductHDR_5">Neurology</h5>
+                                        <p id="p_ProductDet_5">Vestibulum tincidunt enim in pharetra malesuada.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wow fadeInRight row" data-wow-delay="0.3s">
+                                <div class="service-box">
+                                    <div class="service-icon">
+                                        <span class="fa fa-user-md fa-3x" id="span_Product_Icon_6"></span>
+                                    </div>
+                                    <div class="service-desc">
+                                        <h5 class="h-light" id="h5_ProductHDR_6">Sleep Center</h5>
+                                        <p id="p_ProductDet_6">Vestibulum tincidunt enim in pharetra malesuada.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @*//--==>End of Product*@
+
+        </section>
+        <!-- /Section: Product -->
+        <!-- Section: team -->
+        @*//--==>Start of Team*@
+        <section id="team" class="home-section bg-gray paddingbot-60">
+            <div class="container marginbot-50">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="wow fadeInDown" data-wow-delay="0.1s">
+                            <div class="section-heading text-center">
+                                <h2 class="h-bold"><span id="span_Team_Hdr_Desc">Doctors</span><a class="cls_EditWeb cls_Hdr" id='a_Team_Hdr_Desc'><i class='fa fa-edit'></i></a></h2>
+                                <p><span id="span_Team_Desc">Ea melius ceteros oportere quo, pri habeo viderer facilisi ei</span><a class="cls_EditWeb cls_Hdr" id='a_Team_Desc'><i class='fa fa-edit'></i></a></p>
+                            </div>
+                        </div>
+                        <div class="divider-short"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <a class="cls_EditWeb cls_Absolute" id='a_EditTeam'><i class='fa fa-edit'></i></a>
+                        <div id="filters-container" class="cbp-l-filters-alignLeft cls_Department">
+                            <div id="div_Department_1" data-filter="*" class="cbp-filter-item-active cbp-filter-item" val="All" code="0">All (<div class="cbp-filter-counter">5</div>)</div>
+                            <div id="div_Department_3" data-filter=".psychiatrist" class="cbp-filter-item" val="Psychiatrist" code="1">Psychiatrist (<div class="cbp-filter-counter">2</div>)</div>
+                            <div id="div_Department_2" data-filter=".cardiologist" class="cbp-filter-item" val="Cardiologist" code="2">Cardiologist (<div class="cbp-filter-counter">2</div>)</div>
+                            <div id="div_Department_4" data-filter=".neurologist" class="cbp-filter-item" val="Neurologist" code="3">Neurologist (<div class="cbp-filter-counter">1</div>)</div>
+                        </div>
+
+
+                        <div id="carousel-reviews-Team" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner" id="div_Team">
+                                <div class="item active">
+                                    <div class="col-md-4 col-sm-6 rowTeam">
+                                        <a class="cbp-caption cbp-singlePage">
+                                            <div>
+                                                <img src="../Content/Images\WebsiteCreation\Whomps_1\Team\1.jpg" alt="" width="100" id="img_Team_1">
+                                            </div>
+                                            <div class="cbp-caption-activeWrap">
+                                                <div class="cbp-l-caption-alignCenter">
+                                                    <div class="cbp-l-caption-body">
+                                                        <div class="cbp-l-caption-text">VIEW PROFILE</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="doctors/member1.html" class="cbp-singlePage cbp-l-grid-team-name" id="a_TeamName_1">Alice Grue</a>
+                                        <div class="cbp-l-grid-team-position" id="div_TeamDepartment_1" code="1">Psychiatrist</div>
+                                        <input type="hidden" id="hdn_TeamDesc_1" />
+                                    </div>
+
+                                    <div class="col-md-4 col-sm-6 rowTeam">
+                                        <a class="cbp-caption cbp-singlePage">
+                                            <div>
+                                                <img src="../Content/Images/WebsiteCreation/Whomps_1/Team/2.jpg" alt="" width="100" id="img_Team_2">
+                                            </div>
+                                            <div class="cbp-caption-activeWrap">
+                                                <div class="cbp-l-caption-alignCenter">
+                                                    <div class="cbp-l-caption-body">
+                                                        <div class="cbp-l-caption-text">VIEW PROFILE</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="doctors/member1.html" class="cbp-singlePage cbp-l-grid-team-name" id="a_TeamName_2">Joseph Murphy</a>
+                                        <div class="cbp-l-grid-team-position" id="div_TeamDepartment_2" code="2">Cardiologist</div>
+                                        <input type="hidden" id="hdn_TeamDesc_2" />
+                                    </div>
+
+                                    <div class="col-md-4 col-sm-6 rowTeam">
+                                        <a href="doctors/member1.html" class="cbp-caption cbp-singlePage">
+                                            <div>
+                                                <img src="../Content/Images/WebsiteCreation/Whomps_1/Team/3.jpg" alt="" width="100" id="img_Team_3">
+                                            </div>
+                                            <div class="cbp-caption-activeWrap">
+                                                <div class="cbp-l-caption-alignCenter">
+                                                    <div class="cbp-l-caption-body">
+                                                        <div class="cbp-l-caption-text">VIEW PROFILE</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="doctors/member1.html" class="cbp-singlePage cbp-l-grid-team-name" id="a_TeamName_3">Alison Davis</a>
+                                        <div class="cbp-l-grid-team-position" id="div_TeamDepartment_3" code="3">Neurologist</div>
+                                        <input type="hidden" id="hdn_TeamDesc_3" />
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="col-md-4 col-sm-6 rowTeam">
+                                        <a href="doctors/member1.html" class="cbp-caption cbp-singlePage">
+                                            <div>
+                                                <img src="../Content/Images/WebsiteCreation/Whomps_1/Team/4.jpg" alt="" width="100" id="img_Team_4">
+                                            </div>
+                                            <div class="cbp-caption-activeWrap">
+                                                <div class="cbp-l-caption-alignCenter">
+                                                    <div class="cbp-l-caption-body">
+                                                        <div class="cbp-l-caption-text">VIEW PROFILE</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="doctors/member1.html" class="cbp-singlePage cbp-l-grid-team-name" id="a_TeamName_5">Alice Grue</a>
+                                        <div class="cbp-l-grid-team-position" id="div_TeamDepartment_4" code="1">Psychiatrist</div>
+                                        <input type="hidden" id="hdn_TeamDesc_4" />
+                                    </div>
+
+                                    <div class="col-md-4 col-sm-6 rowTeam">
+                                        <a href="doctors/member1.html" class="cbp-caption cbp-singlePage">
+                                            <div>
+                                                <img src="../Content/Images/WebsiteCreation/Whomps_1/Team/1.jpg" alt="" width="100" id="img_Team_5">
+                                            </div>
+                                            <div class="cbp-caption-activeWrap">
+                                                <div class="cbp-l-caption-alignCenter">
+                                                    <div class="cbp-l-caption-body">
+                                                        <div class="cbp-l-caption-text">VIEW PROFILE</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="doctors/member1.html" class="cbp-singlePage cbp-l-grid-team-name" id="a_TeamName_5">Jackson</a>
+                                        <div class="cbp-l-grid-team-position" id="div_TeamDepartment_5" code="2">Cardiologist</div>
+                                        <input type="hidden" id="hdn_TeamDesc_5" />
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="left carousel-control" id="a_lftArrowTeam" href="#carousel-reviews-Team" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left wdThemeColor"></span>
+                            </a>
+                            <a class="right carousel-control" id="a_rgtArrowTeam" href="#carousel-reviews-Team" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right wdThemeColor"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @*//--==>End of Team*@
+        </section>
+        <!-- /Section: team -->
+        @*//--==>Start of Facilities*@
+        <section id="facilities" class="home-section paddingbot-60">
+            <div class="container marginbot-50">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="wow fadeInDown" data-wow-delay="0.1s">
+                            <div class="section-heading text-center">
+                                <h2 class="h-bold"><span id="span_Facilities_Hdr_Desc">Our facilities</span><a class="cls_EditWeb cls_Hdr" id='a_Facilities_Hdr_Desc'><i class='fa fa-edit'></i></a></h2>
+                                <p><span id="span_Facilities_Desc">Ea melius ceteros oportere quo, pri habeo viderer facilisi ei</span><a class="cls_EditWeb cls_Hdr" id='a_Facilities_Desc'><i class='fa fa-edit'></i></a></p>
+                            </div>
+                        </div>
+                        <div class="divider-short"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <a class="cls_EditWeb cls_Absolute" id='a_EditFacility'><i class='fa fa-edit'></i></a>
+                        <div id="div_Facility">
+                            <div class="wow bounceInUp" data-wow-delay="0.2s">
+                                <div id="owl-works" class="owl-carousel">
+                                    <div class="item rowFclty"><a id="a_FcltyTitle_1" href="../Content/Images/WebsiteCreation/Whomps_1/Facility/1.jpg" title="This is an image title" data-lightbox-gallery="gallery_1" data-lightbox-hidpi="../Content/Images/WebsiteCreation/Whomps_1/Facility/1.jpg"><img id="img_Facility_1" src="../Content/Images/WebsiteCreation/Whomps_1/Facility/1.jpg" class="img-responsive" alt="img"></a></div>
+                                    <div class="item rowFclty"><a id="a_FcltyTitle_2" href="../Content/Images/WebsiteCreation/Whomps_1/Facility/2.jpg" title="This is an image title" data-lightbox-gallery="gallery_2" data-lightbox-hidpi="../Content/Images/WebsiteCreation/Whomps_1/Facility/2.jpg"><img id="img_Facility_2" src="../Content/Images/WebsiteCreation/Whomps_1/Facility/2.jpg" class="img-responsive " alt="img"></a></div>
+                                    <div class="item rowFclty"><a id="a_FcltyTitle_3" href="../Content/Images/WebsiteCreation/Whomps_1/Facility/3.jpg" title="This is an image title" data-lightbox-gallery="gallery_3" data-lightbox-hidpi="../Content/Images/WebsiteCreation/Whomps_1/Facility/3.jpg"><img id="img_Facility_3" src="../Content/Images/WebsiteCreation/Whomps_1/Facility/3.jpg" class="img-responsive " alt="img"></a></div>
+                                    <div class="item rowFclty"><a id="a_FcltyTitle_4" href="../Content/Images/WebsiteCreation/Whomps_1/Facility/4.jpg" title="This is an image title" data-lightbox-gallery="gallery_4" data-lightbox-hidpi="../Content/Images/WebsiteCreation/Whomps_1/Facility/4.jpg"><img id="img_Facility_4" src="../Content/Images/WebsiteCreation/Whomps_1/Facility/4.jpg" class="img-responsive " alt="img"></a></div>
+                                    <div class="item rowFclty"><a id="a_FcltyTitle_5" href="../Content/Images/WebsiteCreation/Whomps_1/Facility/5.jpg" title="This is an image title" data-lightbox-gallery="gallery_5" data-lightbox-hidpi="../Content/Images/WebsiteCreation/Whomps_1/Facility/5.jpg"><img id="img_Facility_5" src="../Content/Images/WebsiteCreation/Whomps_1/Facility/5.jpg" class="img-responsive " alt="img"></a></div>
+                                    <div class="item rowFclty"><a id="a_FcltyTitle_6" href="../Content/Images/WebsiteCreation/Whomps_1/Facility/6.jpg" title="This is an image title" data-lightbox-gallery="gallery_6" data-lightbox-hidpi="../Content/Images/WebsiteCreation/Whomps_1/Facility/6.jpg"><img id="img_Facility_6" src="../Content/Images/WebsiteCreation/Whomps_1/Facility/6.jpg" class="img-responsive " alt="img"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        @*//--==>End of Facilities*@
+
+        <!-- /Section: works -->
+        <!-- Section: Feed Back -->
+        <section id="testimonial" class="home-section paddingbot-60 parallax" data-stellar-background-ratio="0.5">
+            <div class="carousel-FeedBk broun-block">
+                <div class="container">
+                    <div class="row">
+                        <a class="cls_EditWeb" id='a_Edit_FeedBk_BkGrnd_Img'><i class='fa fa-edit'></i></a>
+                        <input id="hdr_file_FeedBk_BkGrnd_Img" type="file" accept="image/*" data-type="image" style="display:none;" />
+                        <img src="" id="img_FeedBk_BkGrnd_Img" class="img-responsive" alt="" style="display:none;" />
+                        <div id="carousel-FeedBk" class="carousel slide" data-ride="carousel">
+                            <a class="cls_EditWeb cls_Absolute" id='a_Edit_FeedBk'><i class='fa fa-edit'></i></a>
+                            <div class="carousel-inner" id="div_Feedbk">
+                                <div class="item active">
+                                    <div class="col-md-4 col-sm-6 rowFeedbk">
+                                        <div class="block-text rel zmin">
+                                            <a title="" href="#" id="a_FeedBk_Title_1">Emergency Contraception</a>
+                                            <div class="mark">My rating: <span class="rating-input" id="span_FeedBk_Rate_1"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star"></span><span data-value="3" class="glyphicon glyphicon-star"></span><span data-value="4" class="glyphicon glyphicon-star-empty"></span><span data-value="5" class="glyphicon glyphicon-star-empty"></span>  </span></div>
+                                            <p id="p_FeedBk_Desc_1">Ne eam errem semper. Laudem detracto phaedrum cu vim, pri cu errem fierent fabellas. Quis magna in ius, pro vidit nonumy te, nostrud ...</p>
+                                            <ins class="ab zmin sprite sprite-i-triangle block"></ins>
+                                        </div>
+                                        <div class="person-text rel text-light">
+                                            <img id="p_FeedBk_Img_1" src="../Content/Images/WebsiteCreation/Whomps_1/FeedBk/1.jpg" alt="" class="person img-circle" />
+                                            <a id="a_FeedBk_Name_1" title="" href="#">Anna</a>
+                                            <span id="span_FeedBk_Loctn_1">Chicago, Illinois</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 hidden-xs rowFeedbk">
+                                        <div class="block-text rel zmin">
+                                            <a title="" href="#" id="a_FeedBk_Title_2">Orthopedic Surgery</a>
+                                            <div class="mark">My rating: <span class="rating-input" id="span_Rate_2"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star-empty"></span><span data-value="3" class="glyphicon glyphicon-star-empty"></span><span data-value="4" class="glyphicon glyphicon-star-empty"></span><span data-value="5" class="glyphicon glyphicon-star-empty"></span>  </span></div>
+                                            <p id="p_FeedBk_Desc_2">Ne eam errem semper. Laudem detracto phaedrum cu vim, pri cu errem fierent fabellas. Quis magna in ius, pro vidit nonumy te, nostrud ...</p>
+                                            <ins class="ab zmin sprite sprite-i-triangle block"></ins>
+                                        </div>
+                                        <div class="person-text rel text-light">
+                                            <img id="p_FeedBk_Img_2" src="../Content/Images/WebsiteCreation/Whomps_1/FeedBk/2.jpg" alt="" class="person img-circle" />
+                                            <a id="a_FeedBk_Name_2" title="" href="#">Matthew G</a>
+                                            <span id="span_FeedBk_Loctn_2">San Antonio, Texas</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 hidden-sm hidden-xs rowFeedbk">
+                                        <div class="block-text rel zmin">
+                                            <a title="" href="#" id="a_FeedBk_Title_3">Medical consultation</a>
+                                            <div class="mark">My rating: <span class="rating-input" id="span_FeedBk_Rate_3"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star"></span><span data-value="3" class="glyphicon glyphicon-star"></span><span data-value="4" class="glyphicon glyphicon-star"></span><span data-value="5" class="glyphicon glyphicon-star"></span>  </span></div>
+                                            <p id="p_FeedBk_Desc_3">Ne eam errem semper. Laudem detracto phaedrum cu vim, pri cu errem fierent fabellas. Quis magna in ius, pro vidit nonumy te, nostrud ...</p>
+                                            <ins class="ab zmin sprite sprite-i-triangle block"></ins>
+                                        </div>
+                                        <div class="person-text rel text-light">
+                                            <img id="p_FeedBk_Img_3" src="../Content/Images/WebsiteCreation/Whomps_1/FeedBk/3.jpg" alt="" class="person img-circle" />
+                                            <a id="a_FeedBk_Name_3" title="" href="#">Scarlet Smith</a>
+                                            <span id="span_FeedBk_Loctn_3">Dallas, Texas</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="col-md-4 col-sm-6 rowFeedbk">
+                                        <div class="block-text rel zmin">
+                                            <a title="" href="#" id="a_FeedBk_Title_4">Birth control pills</a>
+                                            <div class="mark">My rating: <span class="rating-input" id="span_FeedBk_Rate_4"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star"></span><span data-value="3" class="glyphicon glyphicon-star"></span><span data-value="4" class="glyphicon glyphicon-star-empty"></span><span data-value="5" class="glyphicon glyphicon-star-empty"></span>  </span></div>
+                                            <p id="p_FeedBk_Desc_4">Ne eam errem semper. Laudem detracto phaedrum cu vim, pri cu errem fierent fabellas. Quis magna in ius, pro vidit nonumy te, nostrud ...</p>
+                                            <ins class="ab zmin sprite sprite-i-triangle block"></ins>
+                                        </div>
+                                        <div class="person-text rel text-light">
+                                            <img id="p_FeedBk_Img_4" src="../Content/Images/WebsiteCreation/Whomps_1/FeedBk/4.jpg" alt="" class="person img-circle" />
+                                            <a id="a_FeedBk_Name_4" title="" href="#">Lucas Thompson</a>
+                                            <span id="span_FeedBk_Loctn_4">Austin, Texas</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 hidden-xs rowFeedbk">
+                                        <div class="block-text rel zmin">
+                                            <a title="" href="#" id="a_FeedBk_Title_5">Radiology</a>
+                                            <div class="mark">My rating: <span class="rating-input" id="span_FeedBk_Rate_5"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star-empty"></span><span data-value="3" class="glyphicon glyphicon-star-empty"></span><span data-value="4" class="glyphicon glyphicon-star-empty"></span><span data-value="5" class="glyphicon glyphicon-star-empty"></span>  </span></div>
+                                            <p id="p_FeedBk_Desc_5">Ne eam errem semper. Laudem detracto phaedrum cu vim, pri cu errem fierent fabellas. Quis magna in ius, pro vidit nonumy te, nostrud ...</p>
+                                            <ins class="ab zmin sprite sprite-i-triangle block"></ins>
+                                        </div>
+                                        <div class="person-text rel text-light">
+                                            <img id="p_FeedBk_Img_5" src="../Content/Images/WebsiteCreation/Whomps_1/FeedBk/5.jpg" alt="" class="person img-circle" />
+                                            <a id="a_FeedBk_Name_5" title="" href="#">Ella Mentree</a>
+                                            <span id="span_FeedBk_Loctn_5">Fort Worth, Texas</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 hidden-sm hidden-xs rowFeedbk">
+                                        <div class="block-text rel zmin">
+                                            <a title="" href="#" id="a_FeedBk_Title_6">Cervical Lesions</a>
+                                            <div class="mark">My rating: <span class="rating-input" id="span_FeedBk_Rate_6"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star"></span><span data-value="3" class="glyphicon glyphicon-star"></span><span data-value="4" class="glyphicon glyphicon-star"></span><span data-value="5" class="glyphicon glyphicon-star"></span>  </span></div>
+                                            <p id="p_FeedBk_Desc_6">Ne eam errem semper. Laudem detracto phaedrum cu vim, pri cu errem fierent fabellas. Quis magna in ius, pro vidit nonumy te, nostrud ...</p>
+                                            <ins class="ab zmin sprite sprite-i-triangle block"></ins>
+                                        </div>
+                                        <div class="person-text rel text-light">
+                                            <img id="p_FeedBk_Img_6" src="../Content/Images/WebsiteCreation/Whomps_1/FeedBk/6.jpg" alt="" class="person img-circle" />
+                                            <a id="a_FeedBk_Name_6" title="" href="#">Suzanne Adam</a>
+                                            <span id="span_FeedBk_Loctn_6">Detroit, Michigan</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a id="a_lftArrowFeedbkp" class="left carousel-control" href="#carousel-FeedBk" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left wdThemeColor"></span>
+                            </a>
+                            <a id="a_rgtArrowFeedbkp" class="right carousel-control" href="#carousel-FeedBk" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right wdThemeColor"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: packages -->
+        <section id="pricing" class="home-section bg-gray paddingbot-60">
+            <div class="container marginbot-50">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="wow lightSpeedIn" data-wow-delay="0.1s">
+                            <div class="section-heading text-center">
+                                <h2 class="h-bold"><span id="span_Packages_Hdr_Desc">Health packages</span><a class="cls_EditWeb cls_Hdr" id='a_Packages_Hdr_Desc'><i class='fa fa-edit'></i></a></h2>
+                                <p><span id="span_Packages_Desc">Take charge of your health today with our specially designed health packages</span><a class="cls_EditWeb cls_Hdr" id='a_Packages_Desc'><i class='fa fa-edit'></i></a></p>
+                            </div>
+                        </div>
+                        <div class="divider-short"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-Package broun-block">
+                <div class="container">
+                    <div class="row">
+                        <div id="carousel-Package" class="carousel slide" data-ride="carousel">
+                            <a class="cls_EditWeb cls_Absolute" id='a_EditPackage'><i class='fa fa-edit'></i></a>
+                            <div class="carousel-inner" id="div_Package">
+                                <div class="item active">
+                                    <div class="col-sm-4 pricing-box rowPack">
+                                        <div class="wow bounceInUp" data-wow-delay="0.1s">
+                                            <div class="pricing-content general">
+                                                <h2 id="h2_Package_Name_1">Basic Fit 1 Package</h2>
+                                                @*<h3>
+                                                        <i class="fa fa-inr" aria-hidden="true"></i>
+                                                        <strong id="strong_Price_1">33</strong>
+                                                        <span>/<strong id="strong_Package_Price_Per_1"> one time</strong></span>
+                                                    </h3>*@
+                                                <h3 id="h3_Pack_Sub_Name_1">
+                                                    <i class="fa fa-inr" aria-hidden="true"></i>33<span>/ one time</span>
+                                                </h3>
+                                                <ul id="ul_Pack_Point_1">
+                                                    <li id="li_Pack_Point_1"><strong class="cls_strong_Pack_Point">Anthropometry (BMI, WH Ratio) </strong> <i class="fa fa-check icon-success"></i></li>
+                                                    <li id="li_Pack_Point_2"><strong class="cls_strong_Pack_Point">Post Examination Review</strong> <i class="fa fa-check icon-success"></i></li>
+                                                    <li id="li_Pack_Point_3"><strong class="cls_strong_Pack_Point">General Screening – Basic</strong> <i class="fa fa-check icon-success"></i></li>
+                                                    <li id="li_Pack_Point_4"><del><strong class="cls_strong_Pack_Point">Health Screening Report</strong></del> <i class="fa fa-times icon-danger"></i></li>
+                                                </ul>
+                                                <div class="price-bottom">
+                                                    <a href="#" class="btn btn-skin btn-lg" id="a_Pack_Btn_HDR_Name_1">Purchase</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-4 pricing-box featured-price rowPack">
+                                        <div class="wow bounceInUp" data-wow-delay="0.3s">
+                                            <div class="pricing-content featured">
+                                                <h2 id="h2_Package_Name_2">Golden Glow Package</h2>
+                                                <h3 id="h3_Pack_Sub_Name_2">
+                                                    <i class="fa fa-inr" aria-hidden="true"></i>33<span>/ one time</span>
+                                                </h3>
+                                                <ul id="ul_Pack_Point_2">
+                                                    <li id="li_Pack_Point_1"><strong class="cls_strong_Pack_Point">Anthropometry (BMI, WH Ratio) </strong><i class="fa fa-check icon-success"></i></li>
+                                                    <li id="li_Pack_Point_2"><strong class="cls_strong_Pack_Point">Post Examination Review </strong><i class="fa fa-check icon-success"></i></li>
+                                                    <li id="li_Pack_Point_3"><strong class="cls_strong_Pack_Point">General Screening – Basic </strong><i class="fa fa-check icon-success"></i></li>
+                                                    <li id="li_Pack_Point_4"><strong class="cls_strong_Pack_Point">Body Composition Analysis </strong><i class="fa fa-check icon-success"></i></li>
+                                                    <li id="li_Pack_Point_5"><strong class="cls_strong_Pack_Point">GR Assessment & Scoring </strong><i class="fa fa-check icon-success"></i></li>
+                                                </ul>
+
+                                                <div class="price-bottom">
+                                                    <a href="#" class="btn btn-skin btn-lg" id="a_Pack_Btn_HDR_Name_2">Purchase</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-4 pricing-box rowPack">
+                                        <div class="wow bounceInUp" data-wow-delay="0.2s">
+                                            <div class="pricing-content general last">
+                                                <h2 id="h2_Package_Name_3">Basic Fit 2 Package</h2>
+                                                <h3 id="h3_Pack_Sub_Name_3">
+                                                    <i class="fa fa-inr" aria-hidden="true"></i>33<span>/ one time</span>
+                                                </h3>
+                                                <ul id="ul_Pack_Point_3">
+                                                    <li id="li_Pack_Point_1"><strong class="cls_strong_Pack_Point">Anthropometry (BMI, WH Ratio) </strong><i class="fa fa-check icon-success"></i></li>
+                                                    <li id="li_Pack_Point_2"><strong class="cls_strong_Pack_Point">Post Examination Review </strong><i class="fa fa-check icon-success"></i></li>
+                                                    <li id="li_Pack_Point_3"><strong class="cls_strong_Pack_Point">General Screening – Regular </strong><i class="fa fa-check icon-success"></i></li>
+                                                    <li id="li_Pack_Point_4"><del><strong class="cls_strong_Pack_Point">Health Screening Report</strong></del> <i class="fa fa-times icon-danger"></i></li>
+                                                </ul>
+
+                                                <div class="price-bottom">
+                                                    <a href="#" class="btn btn-skin btn-lg" id="a_Pack_Btn_HDR_Name_3">Purchase</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="item">
+                                    <div class="col-sm-4 pricing-box rowPack">
+                                        <div class="wow bounceInUp" data-wow-delay="0.1s">
+                                            <div class="pricing-content general">
+                                                <h2 id="h2_Package_Name_4">Basic Fit 1 Package</h2>
+                                                <h3 id="h3_Pack_Sub_Name_4">
+                                                    <i class="fa fa-inr" aria-hidden="true"></i>33<span>/ one time</span>
+                                                </h3>
+                                                <ul id="ul_Pack_Point_4">
+                                                    <li id="li_Pack_Point_1"><strong class="cls_strong_Pack_Point">Anthropometry (BMI, WH Ratio) </strong><i class="fa fa-check icon-success"></i></li>
+                                                    <li id="li_Pack_Point_2"><strong class="cls_strong_Pack_Point">Post Examination Review </strong><i class="fa fa-check icon-success"></i></li>
+                                                    <li id="li_Pack_Point_3"><strong class="cls_strong_Pack_Point">General Screening – Basic </strong><i class="fa fa-check icon-success"></i></li>
+                                                    <li id="li_Pack_Point_4"><del><strong class="cls_strong_Pack_Point">Health Screening Report</strong></del> <i class="fa fa-times icon-danger"></i></li>
+                                                </ul>
+
+                                                <div class="price-bottom">
+                                                    <a href="#" class="btn btn-skin btn-lg" id="a_Pack_Btn_HDR_Name_4">Purchase</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <a id="a_lftArrowPack" class="left carousel-control" href="#carousel-Package" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left wdThemeColor"></span>
+                            </a>
+                            <a id="a_rgtArrowPack" class="right carousel-control" href="#carousel-Package" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right wdThemeColor"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /End of Section: Package -->
+        <!-- /Start of Section: partner -->
+        <section id="partner" class="home-section paddingbot-60">
+            <div class="container marginbot-50">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="wow lightSpeedIn" data-wow-delay="0.1s">
+                            <div class="section-heading text-center">
+                                <h2 class="h-bold"><span id="span_Partner_Hdr_Desc">Our partner</span><a class="cls_EditWeb cls_Hdr" id='a_Partner_Hdr_Desc'><i class='fa fa-edit'></i></a></h2>
+                                <p><span id="span_Partner_Desc">Take charge of your health today with our specially designed health packages</span><a class="cls_EditWeb cls_Hdr" id='a_Partner_Desc'><i class='fa fa-edit'></i></a></p>
+                            </div>
+                        </div>
+                        <div class="divider-short"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-partner broun-block">
+                <div class="container">
+                    <div class="row">
+                        <div id="carousel-partner" class="carousel slide" data-ride="carousel">
+                            <a class="cls_EditWeb cls_Absolute" id='a_Edit_Partner'><i class='fa fa-edit'></i></a>
+                            <div class="carousel-inner" id="div_Partner">
+                                <div class="item active">
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="partner">
+                                            <a href="#"><img id="img_Partner_1" src="../Content/Images/WebsiteCreation/Whomps_1/Partner/1.jpg" alt="" /></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="partner">
+                                            <a href="#"><img id="img_Partner_2" src="../Content/Images/WebsiteCreation/Whomps_1/Partner/2.jpg" alt="" /></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="partner">
+                                            <a href="#"><img id="img_Partner_3" src="../Content/Images/WebsiteCreation/Whomps_1/Partner/3.jpg" alt="" /></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="partner">
+                                            <a href="#"><img id="img_Partner_4" src="../Content/Images/WebsiteCreation/Whomps_1/Partner/4.jpg" alt="" /></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="partner">
+                                            <a href="#"><img id="img_Partner_5" src="../Content/Images/WebsiteCreation/Whomps_1/Partner/4.jpg" alt="" /></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a id="a_lftArrowPartner" class="left carousel-control" href="#carousel-partner" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left wdThemeColor"></span>
+                            </a>
+                            <a id="a_rgtArrowPartner" class="right carousel-control" href="#carousel-partner" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right wdThemeColor"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /End of Section: partner -->
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="wow fadeInDown" data-wow-delay="0.1s">
+                            <div class="widget">
+                                <h5><span id="span_About_Hdr_Desc">About Medicio</span><a class="cls_EditWeb cls_Hdr" id='a_About_Hdr_Desc'><i class='fa fa-edit'></i></a></h5>
+                                <p>
+                                    <span id="span_About_Desc">Lorem ipsum dolor sit amet, ne nam purto nihil impetus, an facilisi accommodare sea</span>
+                                    <a class="cls_EditWeb cls_Hdr" id='a_About_Desc'><i class='fa fa-edit'></i></a>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- /Start of Section: Information -->
+                        <div class="wow fadeInDown" data-wow-delay="0.1s">
+                            <div class="widget">
+                                <h5>
+                                    <span id="span_Information_Hdr_Desc">Information</span>
+                                    <a class="cls_EditWeb cls_Hdr" id='a_Information_Hdr_Desc'><i class='fa fa-edit'></i></a>
+                                </h5>
+                                <a class="cls_EditWeb" id='a_Edit_Information'><i class='fa fa-edit'></i></a>
+                                <ul id="ul_Information">
+                                    <li>
+                                        <a href="#" id="a_info_1">Home</a>
+                                    </li>
+                                    <li><a href="#" id="a_info_2">Laboratory</a></li>
+                                    <li><a href="#" id="a_info_3">Medical treatment</a></li>
+                                    <li><a href="#" id="a_info_4">Terms & conditions</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /End of Section: Information -->
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="wow fadeInDown" data-wow-delay="0.1s">
+                            <div class="widget">
+                                <h5>
+                                    <span id="span_Center_Hdr_Desc">Medicio center</span>
+                                    <a class="cls_EditWeb cls_Hdr" id='a_Center_Hdr_Desc'><i class='fa fa-edit'></i></a>
+                                </h5>
+                                <p>
+                                    <span id="span_Center_Desc">Nam leo lorem, tincidunt id risus ut, ornare tincidunt naqunc sit amet.</span>
+                                    <a class="cls_EditWeb cls_Hdr" id='a_Center_Desc'><i class='fa fa-edit'></i></a>
+                                </p>
+                                <!-- /Start of Section: Contact -->
+                                <a class="cls_EditWeb" id='a_Edit_Contact'><i class='fa fa-edit'></i></a>
+                                <ul class="rowContact" id="ul_Contact">
+                                    <li>
+                                        <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i id="i_ContactIcon_1" class="fa fa-calendar fa-stack-1x fa-inverse"></i>
+                                        </span><strong id="strong_ContactText_1"> Monday - Saturday, 8am to 10pm</strong>
+                                    </li>
+                                    <li>
+                                        <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i id="i_ContactIcon_2" class="fa fa-phone fa-stack-1x fa-inverse"></i>
+                                        </span><strong id="strong_ContactText_2"> +62 0888 904 711</strong>
+                                    </li>
+                                    <li>
+                                        <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i id="i_ContactIcon_3" class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                                        </span><strong id="strong_ContactText_3"> hello@medicio.com</strong>
+                                    </li>
+
+                                </ul>
+                                <!-- /End of Section: Contact -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="wow fadeInDown" data-wow-delay="0.1s">
+                            <div class="widget">
+                                <h5>
+                                    <span id="span_Location_Hdr_Desc">Our location</span>
+                                    <a class="cls_EditWeb cls_Hdr" id='a_Location_Hdr_Desc'><i class='fa fa-edit'></i></a>
+                                </h5>
+                                <p>
+                                    <span id="span_Location_Desc">The Suithouse V303, Kuningan City, Jakarta Indonesia 12940</span>
+                                    <a class="cls_EditWeb cls_Hdr" id='a_Location_Desc'><i class='fa fa-edit'></i></a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="wow fadeInDown" data-wow-delay="0.1s">
+                            <div class="widget">
+                                <a class="cls_EditWeb cls_Hdr" id='a_SocailNtwk_Hdr_Desc'><i class='fa fa-edit'></i></a>
+                                <h5>
+                                    <span id="span_SocailNtwk_Hdr_Desc">Follow us</span>
+                                    <a class="cls_EditWeb" id='a_Edit_SocailNtwk'><i class='fa fa-edit'></i></a>
+                                </h5>
+                                <ul class="company-social rowSocailNtwk" id="ul_SocailNtwk">
+                                    <li id="li_SocailNtwkName_1" class="social-facebook"><a id="a_SocailNtwkHref_1" href="https://www.facebook.com/" target="_blank"><i id="i_SocailNtwkIcon_1" class="fab fa-facebook"></i></a></li>
+                                    <li id="li_SocailNtwkName_2" class="social-twitter"><a id="a_SocailNtwkHref_2" href="https://www.twitter.com/" target="_blank"><i id="i_SocailNtwkIcon_2" class="fab fa-twitter"></i></a></li>
+                                    <li id="li_SocailNtwkName_3" class="social-google"><a id="a_SocailNtwkHref_3" href="https://www.google.com/" target="_blank"><i id="i_SocailNtwkIcon_3" class="fab fa-google-plus"></i></a></li>
+                                    <li id="li_SocailNtwkName_4" class="social-vimeo"><a id="a_SocailNtwkHref_4" href="https://www.vimeo.com/" target="_blank"><i id="i_SocailNtwkIcon_4" class="fab fa-vimeo-square"></i></a></li>
+                                    <li id="li_SocailNtwkName_5" class="social-dribble"><a id="a_SocailNtwkHref_5" href="https://www.dribbble.com/" target="_blank"><i id="i_SocailNtwkIcon_5" class="fab fa-dribbble"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clsAddUpdate">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <div class="wow fadeInRight" data-wow-delay="0.1s">
+                                <div class="text-right">
+                                    <button id="btn_Preview" type="button" class="btn btn-primary">Preview</button>
+                                    <button id="btn_Save" type="button" class="btn btn-success">Next</button>
+                                    <button id="btn_Cancel" type="button" class="btn btn-danger">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sub-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6 col-lg-6">
+                            <div class="wow fadeInLeft" data-wow-delay="0.1s">
+                                <div class="text-left">
+                                    <p>&copy;Copyright 2019 - Whomps. All rights reserved.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6">
+                            <div class="wow fadeInRight" data-wow-delay="0.1s">
+                                <div class="text-right">
+                                    @*<p><a href="http://bootstraptaste.com/">Bootstrap Themes</a> by BootstrapTaste</p>
+                                        My BOT
+                                    *@
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
+
+    @*======================Modal Pop Up===========================*@
+
+    @*--> 1. Hdr*@
+    <div id="div_Hdr" class="modal fade cls_UpdateModal" role="dialog" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="h4_HdrTitle"></h4>
+                </div>
+                <div class="modal-body UpdateIU_Body">
+                    <div>
+                        <div class="clearfix div_margin">
+                            <div class="col-xs-12">
+                                <div class="col-xs-2">
+                                    <label id="lbl_Hdr"></label>
+                                </div>
+                                <div class="col-xs-10">
+                                    <input type="text" id="txt_Hdr" class="form-control" aria-describedby="basic-addon2" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                        <button id="btn_UpdateHdr" type="button" class="btn btn-primary">Update</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @*--> 2. Slogan*@
+    <div id="div_Slogan" class="modal fade cls_UpdateModal" role="dialog" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="h4_HdrSlogan"></h4>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <div class="clearfix div_margin" id="div_ModalBody_Slogan">
+                            <div class="col-xs-12">
+                                <div class="col-xs-5">
+                                    <input type="text" id="txt_SloganHdr" class="form-control bold" aria-describedby="basic-addon2" />
+                                </div>
+                                <div class="col-xs-5">
+                                    <input type="text" id="txt_SloganDet" class="form-control" aria-describedby="basic-addon2" />
+                                </div>
+                                <div class="col-xs-2">
+                                    <a class="pointer" id="a_AddSlogan"><i class="fa fa-plus"></i></a>&nbsp;&nbsp;'
+                                    <a class="pointer" id="a_DeleteSlogan"><i class="fa fa-minus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                        <button id="btn_UpdateSlogan" type="button" class="btn btn-primary">Update</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @*--> 3. Oper_Flow*@
+    <div id="div_Oper_Flow_Modal" class="modal fade cls_UpdateModal" role="dialog" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="h4_HdrSlogan"></h4>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <div class="clearfix div_margin" id="div_ModalBody_Oper_Flow">
+                            <div class="col-xs-12 rowOper_Flow">
+                                <div class="col-xs-2">
+                                    <input type="text" id="txt_Oper_FlowIcon" class="form-control" aria-describedby="basic-addon2" />
+                                </div>
+                                <div class="col-xs-4">
+                                    <input type="text" id="txt_Oper_FlowHdr" class="form-control bold" aria-describedby="basic-addon2" />
+                                </div>
+                                <div class="col-xs-4">
+                                    <input type="text" id="txt_Oper_FlowDet" class="form-control" aria-describedby="basic-addon2" />
+                                </div>
+                                <div class="col-xs-2">
+                                    <a class="pointer" id="a_AddOper_Flow"><i class="fa fa-plus"></i></a>&nbsp;&nbsp;'
+                                    <a class="pointer" id="a_DeleteOper_Flow"><i class="fa fa-minus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                        <button id="btn_UpdateOper_Flow" type="button" class="btn btn-primary">Update</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @*--> 4. Products*@
+    <div id="div_Products_Modal" class="modal fade cls_UpdateModal" role="dialog" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="h4_HdrProducts">Add Product</h4>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <div class="clearfix div_margin" id="div_ModalBody_Products">
+                            <div class="col-xs-12 row">
+                                <div class="col-xs-2">
+                                    <input type="text" id="txt_ProductIcon" class="form-control" aria-describedby="basic-addon2" />
+                                </div>
+                                <div class="col-xs-4">
+                                    <input type="text" id="txt_ProductHdr" class="form-control bold" aria-describedby="basic-addon2" />
+                                </div>
+                                <div class="col-xs-4">
+                                    <input type="text" id="txt_ProductDet" class="form-control" aria-describedby="basic-addon2" />
+                                </div>
+                                <div class="col-xs-2">
+                                    <a class="pointer" id="a_AddProduct"><i class="fa fa-plus"></i></a>&nbsp;&nbsp;'
+                                    <a class="pointer" id="a_DeleteProduct"><i class="fa fa-minus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                        <button id="btn_UpdateProducts" type="button" class="btn btn-primary">Update</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @*--> 5. Team*@
+    <div id="div_Team_Modal" class="modal fade cls_UpdateModal" role="dialog" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="h4_HdrTeam">Add Team</h4>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <div class="clearfix div_margin" id="div_ModalBody_Team">
+                            <div class="col-xs-12 row">
+                                <div class="col-xs-2">
+                                    <select id="ddl_TeamDepartmen_1" class="form-control" aria-describedby="basic-addon2" />
+                                </div>
+                                <div class="col-xs-2">
+                                    <img src="../Content/Images/no-image.jpg" alt="../Content/Images/no-image.jpg" id="img_Team_1" class="img cls_logo" title="Add Team Member Images">
+                                    <input id="file_Team_1" type="file" accept="image/*" data-type="image" style="display:none;">
+                                </div>
+                                <div class="col-xs-2">
+                                    <input type="text" id="txt_TeamName_1" class="form-control" aria-describedby="basic-addon2" placeholder="Enter team name" title="Enter team name" />
+                                </div>
+                                <div class="col-xs-4">
+                                    <textarea id="ta_TeamDesc_1" class="form-control" aria-describedby="basic-addon2" placeholder="Enter team description" title="Enter team description"></textarea>
+                                </div>
+                                <div class="col-xs-2">
+                                    <a class="pointer" id="a_AddTeam"><i class="fa fa-plus"></i></a>&nbsp;&nbsp;'
+                                    <a class="pointer" id="a_DeleteTeam"><i class="fa fa-minus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                        <button id="btn_UpdateTeam" type="button" class="btn btn-primary">Update</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @*-->5.1 Team Department*@
+
+    <div id="div_TeamDep_Modal" class="modal fade cls_UpdateModal" role="dialog" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="h4_HdrTeam">Add Update Team Department</h4>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <div class="clearfix div_margin" id="div_ModalBody_TeamDep">
+                            <div class="col-xs-12 row">
+                                <div class="col-xs-10">
+                                    <input type="text" id="txt_TeamDepName_1" class="form-control" aria-describedby="basic-addon2" placeholder="Enter team name" title="Enter team name" />
+                                </div>
+                                <div class="col-xs-2">
+                                    <a class="pointer" id="a_AddTeamDep"><i class="fa fa-plus"></i></a>&nbsp;&nbsp;'
+                                    <a class="pointer" id="a_DeleteTeamDep"><i class="fa fa-minus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                        <button id="btn_AddUpdateTeamDep" type="button" class="btn btn-primary">Update</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @*--> 6. Facility*@
+    <div id="div_Fclty_Modal" class="modal fade cls_UpdateModal" role="dialog" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="h4_HdrTeam">Add Facility</h4>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <div class="clearfix div_margin" id="div_ModalBody_Fclty">
+                            <div class="col-xs-12 row">
+                                <div class="col-xs-5">
+                                    <input type="text" id="txt_FcltyTitle_1" class="form-control" aria-describedby="basic-addon2" placeholder="Enter facility title" title="Enter facility title" />
+                                </div>
+                                <div class="col-xs-5">
+                                    <img src="../Content/Images/no-image.jpg" alt="../Content/Images/no-image.jpg" id="img_PopUpFacility_1" class="img cls_logo" title="Add facility images">
+                                    <input id="file_PopUpFacility_1" type="file" accept="image/*" data-type="image" style="display:none;">
+                                </div>
+                                <div class="col-xs-2">
+                                    <a class="pointer" id="a_AddFacility"><i class="fa fa-plus"></i></a>&nbsp;&nbsp;'
+                                    <a class="pointer" id="a_DeleteFacility"><i class="fa fa-minus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                        <button id="btn_UpdateFacility" type="button" class="btn btn-primary">Update</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @*--> 7. FeedBk*@
+    <div id="div_FeedBk_Modal" class="modal fade cls_UpdateModal" role="dialog" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="h4_HdrFeedBk">Add Feed Back</h4>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <div class="clearfix div_margin" id="div_ModalBody_FeedBk">
+                            <div class="col-xs-12 row">
+                                <div class="col-xs-2">
+                                    <input type="text" id="txt_FeedBk_Title_1" class="form-control" aria-describedby="basic-addon2" placeholder="Enter feedback title" title="Enter feedback title" />
+                                </div>
+                                <div class="col-xs-1">
+                                    <input type="text" id="txt_FeedBk_Rate" class="form-control allownumericwithoutdecimal" aria-describedby="basic-addon2" placeholder="Enter feedback rate" title="Enter feedback rate" />
+                                </div>
+                                <div class="col-xs-2">
+                                    <textarea id="ta_FeedBk_Desc_1" class="form-control" aria-describedby="basic-addon2" placeholder="Enter feedback description" title="Enter feedback description"></textarea>
+                                </div>
+                                <div class="col-xs-2">
+                                    <img src="../Content/Images/no-image.jpg" alt="../Content/Images/no-image.jpg" id="img_FeedBk_1" class="img cls_logo" title="Add Customer Images">
+                                    <input id="file_FeedBk_1" type="file" accept="image/*" data-type="image" style="display:none;">
+                                </div>
+                                <div class="col-xs-2">
+                                    <input type="text" id="txt_FeedBk_Name_1" class="form-control" aria-describedby="basic-addon2" placeholder="Enter feedback name" title="Enter feedback name" />
+                                </div>
+                                <div class="col-xs-2">
+                                    <input type="text" id="txt_FeedBk_Loctn_1" class="form-control" aria-describedby="basic-addon2" placeholder="Enter feedback location" title="Enter feedback location" />
+                                </div>
+                                <div class="col-xs-1">
+                                    <a class="pointer" id="a_AddFeedBk_1"><i class="fa fa-plus"></i></a>&nbsp;&nbsp;'
+                                    <a class="pointer" id="a_DeleteFeedBk_1"><i class="fa fa-minus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                        <button id="btn_UpdateFeedBk" type="button" class="btn btn-primary">Update</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @*--> 8. Packages*@
+    <div id="div_Packs_Modal" class="modal fade cls_UpdateModal" role="dialog" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="h4_HdrPacks">Add Packsages</h4>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <div class="clearfix div_margin" id="div_ModalBody_Packs">
+                            <div class="col-xs-12 row">
+                                <div class="col-xs-2">
+                                    <input type="text" id="txt_Package_Name_1" class="form-control" aria-describedby="basic-addon2" placeholder="Enter package name" title="Enter package name" />
+                                </div>
+                                <div class="col-xs-4">
+                                    <input type="text" id="txt_Pack_Sub_Name_1" class="form-control" aria-describedby="basic-addon2" placeholder="Enter package sub name" title="Enter package price" />
+                                </div>
+                                <div class="col-xs-2">
+                                    <i class="fa fa-list-alt fa-3x circled bg-skin pointer" id="i_Pack_Point_1"></i>
+                                    <input type="hidden" id="hdn_pointDet_1" />
+                                    <input type="hidden" id="hdn_Is_Pack_Chk_1" />
+                                </div>
+                                <div class="col-xs-2">
+                                    <input type="text" id="txt_PackBtnHDRName_1" class="form-control" aria-describedby="basic-addon2" placeholder="Enter package button hdr name" title="Enter package button hdr name" />
+                                </div>
+                                <div class="col-xs-2">
+                                    <a class="pointer" id="a_AddPacks_1"><i class="fa fa-plus"></i></a>&nbsp;&nbsp;
+                                    <a class="pointer" id="a_DeletePacks_1"><i class="fa fa-minus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                        <button id="btn_UpdatePacks" type="button" class="btn btn-primary">Update</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @*--> 8.1 Packages*@
+    <div id="div_PacksPoints" class="modal fade cls_UpdateModal" role="dialog" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="h4_HdrPacksPoint">Add Packsages Points</h4>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <div class="clearfix div_margin" id="div_ModalBody_PacksPoints">
+                            <div class="col-xs-12 row">
+                                <div class="col-xs-8">
+                                    <input type="text" id="txt_PackagePoints_1" class="form-control" aria-describedby="basic-addon2" placeholder="Enter package name" title="Enter package name" />
+                                </div>
+                                <div class="col-xs-2">
+                                    <input type="checkbox" id="chk_IsPointsChk_1">
+                                </div>
+                                <div class="col-xs-2">
+                                    <a class="pointer" id="a_AddPointsPacks_1"><i class="fa fa-plus"></i></a>&nbsp;&nbsp;
+                                    <a class="pointer" id="a_DeletePointsPacks_1"><i class="fa fa-minus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                        <button id="btn_UpdatePacksPoints" type="button" class="btn btn-primary">Update</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @*--> 9. Partner*@
+    <div id="div_Partner_Modal" class="modal fade cls_UpdateModal" role="dialog" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="h4_HdrPartner">Add Partner</h4>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <div class="clearfix div_margin" id="div_ModalBody_Partner">
+                            <div class="col-xs-12 row">
+                                <div class="col-xs-10">
+                                    <img src="../Content/Images/no-image.jpg" alt="../Content/Images/no-image.jpg" id="img_PopPartner_1" class="img cls_logo" title="Add Partner Images">
+                                    <input id="file_Partner_1" type="file" accept="image/*" data-type="image" style="display:none;">
+                                </div>
+                                <div class="col-xs-2">
+                                    <a class="pointer" id="a_AddPartner_1"><i class="fa fa-plus"></i></a>&nbsp;&nbsp;
+                                    <a class="pointer" id="a_DeletePartner_1"><i class="fa fa-minus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                        <button id="btn_UpdatePartner" type="button" class="btn btn-primary">Update</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @*--> 10. Information*@
+    <div id="div_Info_Modal" class="modal fade cls_UpdateModal" role="dialog" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="h4_HdrInfo">Add Information</h4>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <div class="clearfix div_margin" id="div_ModalBody_Info">
+                            <div class="col-xs-12 row">
+                                <div class="col-xs-10">
+                                    <input type="text" id="txt_Info_1" class="form-control" aria-describedby="basic-addon2" placeholder="Enter company info" title="Enter company info" />
+                                </div>
+                                <div class="col-xs-2">
+                                    <a class="pointer" id="a_AddInfo_1"><i class="fa fa-plus"></i></a>&nbsp;&nbsp;
+                                    <a class="pointer" id="a_DeleteInfo_1"><i class="fa fa-minus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                        <button id="btn_UpdateInfo" type="button" class="btn btn-primary">Update</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @*--> 11. Contact*@
+    <div id="div_Contact_Modal" class="modal fade cls_UpdateModal" role="dialog" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="h4_HdrContact">Add Contact</h4>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <div class="clearfix div_margin" id="div_ModalBody_Contact">
+                            <div class="col-xs-12 row">
+                                <div class="col-xs-10">
+                                    <input type="text" id="txt_ContactIcon_1" class="form-control" aria-describedby="basic-addon2" placeholder="Enter company icon" title="Enter company icon" />
+                                    <input type="text" id="txt_ContactName_1" class="form-control" aria-describedby="basic-addon2" placeholder="Enter company contact" title="Enter company contact" />
+                                </div>
+                                <div class="col-xs-2">
+                                    <a class="pointer" id="a_AddContact_1"><i class="fa fa-plus"></i></a>&nbsp;&nbsp;
+                                    <a class="pointer" id="a_DeleteContact_1"><i class="fa fa-minus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                        <button id="btn_UpdateContact" type="button" class="btn btn-primary">Update</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @*--> 12. SocialNtwk*@
+    <div id="div_SocialNtwk_Modal" class="modal fade cls_UpdateModal" role="dialog" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="h4_HdrSocialNtwk">Add Social Network</h4>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <div class="clearfix div_margin" id="div_ModalBody_SocialNtwk">
+                            <div class="col-xs-12 row">
+                                <div class="col-xs-4">
+                                    <input type="text" id="txt_SocialNtwkHref_1" class="form-control" aria-describedby="basic-addon2" placeholder="Enter company social network" title="Enter company social network" />
+                                </div>
+                                <div class="col-xs-2">
+                                    <input type="text" id="txt_SocialNtwk_1" class="form-control" aria-describedby="basic-addon2" placeholder="Enter company social network" title="Enter company social network" />
+                                </div>
+                                <div class="col-xs-4">
+                                    <input type="text" id="txt_SocialNtwkIcon_1" class="form-control" aria-describedby="basic-addon2" placeholder="Enter company icon" title="Enter company social icon" />
+                                </div>
+                                <div class="col-xs-2">
+                                    <a class="pointer" id="a_AddSocialNtwk_1"><i class="fa fa-plus"></i></a>&nbsp;&nbsp;
+                                    <a class="pointer" id="a_DeleteSocialNtwk_1"><i class="fa fa-minus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                        <button id="btn_UpdateSocialNtwk" type="button" class="btn btn-primary">Update</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @*--> 13.Field *@
+    <div id="div_Field_Modal" class="modal fade cls_UpdateModal" role="dialog" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="h4_HdrField">Add Field</h4>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <div class="clearfix div_margin" id="div_ModalBody_Field">
+                            <div class="col-xs-12 row">
+                                <div class="col-xs-10">
+                                    <input type="text" id="txt_ModalFieldName_1" class="form-control" aria-describedby="basic-addon2" placeholder="Enter field" title="Enter field" />
+                                </div>
+                                <div class="col-xs-2">
+                                    <a class="pointer" id="a_AddField_1"><i class="fa fa-plus"></i></a>&nbsp;&nbsp;
+                                    <a class="pointer" id="a_DeleteField_1"><i class="fa fa-minus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                        <button id="btn_UpdateField" type="button" class="btn btn-primary">Update</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @*--> 14.  Menu*@
+    <div id="div_Menu_Modal" class="modal fade cls_UpdateModal" role="dialog" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="h4_HdrMenu">Add Menu</h4>
+                </div>
+                <div class="modal-body" id="div_ModalBody_Menu">
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    @*--> 15. Company*@
+    <div id="div_Comp_Mdl" class="modal fade cls_UpdateModal" role="dialog" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title">Enter Details For <strong id="strg_CreateComp"></strong></h4>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <div class="col-xs-12 colMargin">
+                            <div class="col-xs-2">
+                                <label>Company Name <span class="clMandty">*</span></label>
+                            </div>
+                            <div class="col-xs-4">
+                                <input type="text" id="txt_Company_Name" class="form-control" aria-describedby="basic-addon2" />
+                            </div>
+                            <div class="col-xs-2">
+                                <label>Client Name <span class="clMandty">*</span></label>
+                            </div>
+                            <div class="col-xs-4">
+                                <input type="text" id="txt_Contact_Person" class="form-control" aria-describedby="basic-addon2" />
+                            </div>
+                        </div>
+                        <div class="col-xs-12 colMargin">
+                            <div class="col-xs-2">
+                                <label>Mail ID <span class="clMandty">*</span></label>
+                            </div>
+                            <div class="col-xs-4">
+                                <input type="email" id="txt_Company_Email" class="form-control" aria-describedby="basic-addon2" />
+                            </div>
+                            <div class="col-xs-2">
+                                <label>Mob. No. <span class="clMandty">*</span></label>
+                            </div>
+                            <div class="col-xs-4">
+                                <input type="text" id="txt_Mob_1" class="form-control" aria-describedby="basic-addon2" />
+                            </div>
+                        </div>
+                        <div class="col-xs-12 colMargin">
+                            <div class="col-xs-2">
+                                <label>Tel. No.</label>
+                            </div>
+                            <div class="col-xs-4">
+                                <input type="text" id="txt_Tel_1" class="form-control" aria-describedby="basic-addon2" />
+                            </div>
+                            <div class="col-xs-2">
+                                <label>Aadhar No. <span class="clMandty">*</span></label>
+                            </div>
+                            <div class="col-xs-4">
+                                <input type="text" id="txt_Aadhar_Card_NO" class="form-control" aria-describedby="basic-addon2" />
+                            </div>
+                        </div>
+                        <div class="col-xs-12 colMargin">
+                            <div class="col-xs-2">
+                                <label>Pan No. <span class="clMandty">*</span></label>
+                            </div>
+                            <div class="col-xs-4">
+                                <input type="text" id="txt_Pan_Card_No" class="form-control" aria-describedby="basic-addon2" />
+                            </div>
+                            <div class="col-xs-2">
+                                <label>Specialist In <span class="clMandty">*</span></label>
+                            </div>
+                            <div class="col-xs-4">
+                                <input type="text" id="txt_Company_Specialist_In" class="form-control" aria-describedby="basic-addon2" />
+                            </div>
+                        </div>
+                        <div class="col-xs-12 colMargin">
+                            <div class="col-xs-2">
+                                <label>Address <span class="clMandty">*</span></label>
+                            </div>
+                            <div class="col-xs-4">
+                                <input type="text" id="txt_Company_Address" class="form-control" aria-describedby="basic-addon2" />
+                            </div>
+                            <div class="col-xs-2">
+                                <label>Theme <span class="clMandty">*</span></label>
+                            </div>
+                            <div class="col-xs-4">
+                                <select id="ddl_Theme" class="form-control"><option value="0">Select Theme</option></select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                        <button id="btn_AddUpdate_Company" type="button" class="btn btn-primary">Create Website</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="div_ModalMenu_Html" style="display:none">
+        <div class="clearfix div_margin" id="div_ModalMainMenu">
+            <div class="col-xs-12 row">
+                <div class="col-xs-10">
+                    <ul>
+                        <li>
+                            <input type="text" value="Home" hrefVal="intro" class="cls_MenuText" id="txt_ModalMenuName_1" />
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-2">
+                    <a class="pointer" style="display:none" id="a_AddMenu_1"><i class="fa fa-plus"></i></a>&nbsp;&nbsp;
+                </div>
+            </div>
+            <div class="col-xs-12 row">
+                <div class="col-xs-10">
+                    <ul>
+                        <li>
+                            <input type="text" value="Solution" hrefVal="product" class="cls_MenuText" id="txt_ModalMenuName_2" />
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-2">
+                    <a class="pointer" style="display:none" id="a_AddMenu_2"><i class="fa fa-plus"></i></a>&nbsp;&nbsp;
+                    <a class="pointer" id="a_DeleteMenu_2"><i class="fa fa-minus"></i></a>
+                </div>
+            </div>
+            <div class="col-xs-12 row">
+                <div class="col-xs-10">
+                    <ul>
+                        <li>
+                            <input type="text" value="Expert" hrefVal="team" class="cls_MenuText" id="txt_ModalMenuName_3" />
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-2">
+                    <a class="pointer" style="display:none" id="a_AddMenu_3"><i class="fa fa-plus"></i></a>&nbsp;&nbsp;
+                    <a class="pointer" id="a_DeleteMenu_3"><i class="fa fa-minus"></i></a>
+                </div>
+            </div>
+            <div class="col-xs-12 row">
+                <div class="col-xs-10">
+                    <ul>
+                        <li>
+                            <input type="text" value="Facilities" hrefVal="facilities" class="cls_MenuText" id="txt_ModalMenuName_4" />
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-2">
+                    <a class="pointer" style="display:none" id="a_AddMenu_4"><i class="fa fa-plus"></i></a>&nbsp;&nbsp;
+                    <a class="pointer" id="a_DeleteMenu_4"><i class="fa fa-minus"></i></a>
+                </div>
+            </div>
+            <div class="col-xs-12 row">
+                <div class="col-xs-10">
+                    <ul>
+                        <li>
+                            <input type="text" value="Pricing" hrefVal="pricing" class="cls_MenuText" id="txt_ModalMenuName_5" />
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-2">
+                    <a class="pointer" style="display:none" id="a_AddMenu_5"><i class="fa fa-plus"></i></a>&nbsp;&nbsp;
+                    <a class="pointer" id="a_DeleteMenu_5"><i class="fa fa-minus"></i></a>
+                </div>
+            </div>
+            <div class="col-xs-12 row" id="div_ModalMenuMore_TR">
+                <div class="col-xs-12">
+                    <ul>
+                        <li class="dropdown">
+                            <input type="text" value="More" class="cls_MenuText" id="txt_ModalSubMenuHdr" />
+                            <ol id="ol_ModalSubMenu">
+                                <li>
+                                    <input type="text" value="Home form" hrefVal="NA" class="cls_MenuText" id="txt_ModalMenuName_6" /> &nbsp;
+                                    <input type="text" value="www.google.com" class="cls_MenuText" placeholder="Enter the url" id="txt_ModalMenuURL_1" /> &nbsp;
+                                    <a class="pointer" style="display:none" id="a_AddMenu_6"><i class="fa fa-plus"></i></a>&nbsp;&nbsp;
+                                    <a class="pointer" subLi="true" id="a_DeleteMenu_6"><i class="fa fa-minus"></i></a>
+                                </li>
+                                <li>
+                                    <input type="text" value="Home video" hrefVal="NA" class="cls_MenuText" id="txt_ModalMenuName_7" /> &nbsp;
+                                    <input type="text" value="www.google.com" class="cls_MenuText" placeholder="Enter the url" id="txt_ModalMenuURL_2" /> &nbsp;
+                                    <a class="pointer" style="display:none" id="a_AddMenu_7"><i class="fa fa-plus"></i></a>&nbsp;&nbsp;
+                                    <a class="pointer" subLi="true" id="a_DeleteMenu_7"><i class="fa fa-minus"></i></a>
+                                </li>
+                                <li>
+                                    <input type="text" value="Home CTA" hrefVal="NA" class="cls_MenuText" id="txt_ModalMenuName_8" /> &nbsp;
+                                    <input type="text" value="www.google.com" class="cls_MenuText" placeholder="Enter the url" id="txt_ModalMenuURL_3" /> &nbsp;
+                                    <a class="pointer" id="a_AddMenu_8"><i class="fa fa-plus"></i></a>&nbsp;&nbsp;
+                                    <a class="pointer" subLi="true" id="a_DeleteMenu_8"><i class="fa fa-minus"></i></a>
+                                </li>
+                            </ol>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+            <button id="btn_UpdateMenu" type="button" class="btn btn-primary">Update</button>
+        </div>
+    </div>
+
+
+    <div id="div_Error" class="modal fade cls_UpdateModal" role="dialog" tabindex="-1"></div>
+
+    @*======================End Modal Pop Up===========================*@
+
+    <!--===============Start of js ===============-->
+    <script src="~/Scripts/WebsiteCreation/jquery.min.js"></script>
+    <script src="~/Scripts/WebsiteCreation/bootstrap.min.js"></script>
+    <script src="~/Scripts/WebsiteCreation/jquery.easing.min.js"></script>
+    <script src="~/Scripts/WebsiteCreation/wow.min.js"></script>
+    <script src="~/Scripts/WebsiteCreation/jquery.scrollTo.js"></script>
+    <script src="~/Scripts/WebsiteCreation/jquery.appear.js"></script>
+    <script src="~/Scripts/WebsiteCreation/stellar.js"></script>
+    <script src="~/Scripts/WebsiteCreation/jquery.cubeportfolio.min.js"></script>
+    <script src="~/Scripts/Library/owl.carousel.min.js"></script>
+    <script src="~/Scripts/WebsiteCreation/nivo-lightbox.min.js"></script>
+    <script src="~/Scripts/WebsiteCreation/custom.js"></script>
+    @*--==>operations*@
+    <script src="~/Scripts/CommonJS/CommonFn.js"></script>
+    <script src="~/Scripts/CommonJS/Convert.js"></script>
+    <script src="~/Scripts/Admin/WebDesign.js"></script>
+    <script src="~/Scripts/Admin/WebAddUpdate.js"></script>
+    <script src="~/Scripts/Admin/WebViewDesign.js"></script>
+    <!--===============End of js ===============-->
+</body>
+</html>

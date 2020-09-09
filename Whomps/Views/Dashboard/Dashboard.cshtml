@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "Dashboard";
+}
+<div class="alert-msgs" style="display:none">
+    <label id="dvSave" style="color: #fff; display: none;"> </label>
+</div>
+<div class="body-wrapper dashboard-wrapper">
+    <div class="inner-dashboard-wrapper">
+        <div>
+            @*<img src="~/Content/Images/prestige_Logo.png" class="img-responsive wlcm_logo" alt="Dashboard" />*@
+            <img src="~/Content\Images\WebsiteCreation\Whomps_1/Hdr/Logo.png" class="img-responsive wlcm_logo" alt="Dashboard" />
+            <h1 class="wlcm_text">Welcome to Whomps</h1>
+        </div>
+    </div>
+</div>
+<script src="~/Scripts/CommonJS/CommonFn.js"></script>
+<script src="~/Scripts/CommonJS/Convert.js"></script>
+<script>
+    $(document).ready(function () {
+        try {
+
+        }
+        catch (ex) {
+            console.log("issue in Dashboard=>Document ready :- " + ex.message);
+            return false;
+        }
+        finally {
+            WMP_Common.HideProcess();
+        }
+    });
+</script>

@@ -1,0 +1,131 @@
+﻿
+@{
+    ViewBag.Title = "Company Setting";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="body-wrapper">
+    <div class="page-heading">
+        <h3 class="page-title-heading pull-left">Company Setting</h3>
+        <button class="addnew-btn pull-right" id="btn_AddNew">Add New</button>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="srchBox">
+                <input type="text" id="txt_CompanyName" class="srchInput" placeholder="Search airport" />
+                <i class="fa fa-search"></i>
+            </div>
+        </div>
+    </div>
+    <script>
+        var getData = @Html.Raw(Json.Encode(@ViewBag.getData));
+        var CreateAirport="@Url.Action("CreateCompany", "Admin")";
+        var UpdateAirport="@Url.Action("UpdateCompany", "Admin")";
+        var UpdateAirport="@Url.Action("DeleteCompany", "Admin")";
+        var UpdateAirport="@Url.Action("GetCompany", "Admin")";
+    </script>
+    <div class="table table-responsive">
+        <table id="tbl_Company_Master"></table>
+    </div>
+    @*Model popup*@
+    <div class="modal fade theme-modal" id="AddAirportName" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"></button>
+                    <h4 class="modal-title" id="h4_ModalHdr">ADD COMPANY DETAILS</h4>
+                </div>
+                <div class="modal-body modal-validation">
+                    <div class="form-horizontal">
+                        <h4 class="col-xs-12">COMPANY DETAILS</h4>
+                        <div class="row">
+                            <div class="col-xs-12 form-group">
+                                <label class="col-xs-12 col-sm-3 control-label" id="lbl_Company_Name">Company Name</label>
+                                <div class="col-xs-12 col-sm-9">
+                                    <input type='text' id="txt_Company_Name" class="cls_Required form-control" placeholder="Enter Company Name" />
+                                </div>
+                            </div>
+                            <div class="col-xs-12 form-group">
+                                <label class="col-xs-12 col-sm-3 control-label" id="lbl_Company_Name">Company Specialist In</label>
+                                <div class="col-xs-12 col-sm-9">
+                                    <input type='text' id="txt_Company_Specialist_In" class="form-control" placeholder="Enter Company Specialist In" />
+                                </div>
+                            </div>
+                            <div class="col-xs-12 form-group">
+                                <label class="col-xs-12 col-sm-3 control-label" id="lbl_Company_Name">Company Address</label>
+                                <div class="col-xs-12 col-sm-9">
+                                    <input type='text' id="txt_Company_Address" class="cls_Required form-control" placeholder="Enter Company Address" />
+                                </div>
+                            </div>
+                            <div class="col-xs-12 form-group">
+                                <label class="col-xs-12 col-sm-3 control-label" id="lbl_Company_Name">GSTIN No</label>
+                                <div class="col-xs-12 col-sm-9">
+                                    <input type='text' id="txt_GSTIN_No" class="form-control" placeholder="Enter GSTIN No" />
+                                </div>
+                            </div>
+                            <div class="col-xs-12 form-group">
+                                <label class="col-xs-12 col-sm-3 control-label" id="lbl_Company_Name_Color">Company Name Color</label>
+                                <div class="col-xs-12 col-sm-9">
+                                    <input type="color"class="form-control" value="#ff0000" id="color_Company_Name_Color">
+                                </div>
+                            </div>
+                            <div class="col-xs-12 form-group">
+                                <label class="col-xs-12 col-sm-3 control-label" id="lbl_State_Name">State Name</label>
+                                <div class="col-xs-12 col-sm-9">
+                                    <input type='text' id="txt_State_Name" class="form-control" placeholder="Enter State Name" />
+                                </div>
+                            </div>
+                            <div class="col-xs-12 form-group">
+                                <label class="col-xs-12 col-sm-3 control-label" id="lbl_State_Code">State Code</label>
+                                <div class="col-xs-12 col-sm-9">
+                                    <input type='text' id="txt_State_Code" class="form-control" placeholder="Enter State Code" />
+                                </div>
+                            </div>
+                            <div class="col-xs-12 form-group">
+                                <label class="col-xs-12 col-sm-3 control-label" id="lbl_Pan_Card_No">Pan Card No</label>
+                                <div class="col-xs-12 col-sm-9">
+                                    <input type='text' id="txt_Pan_Card_No" class="form-control" placeholder="Enter Pan Card No" />
+                                </div>
+                            </div>
+                            <div class="col-xs-12 form-group">
+                                <label class="col-xs-12 col-sm-3 control-label" id="lbl_Status">Status</label>
+                                <div class="col-xs-12 col-sm-9">
+                                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="chk_Status" checked>
+                                    <label class="onoffswitch-label" for="myonoffswitch">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 form-group">
+                                <label class="col-xs-12 col-sm-3 control-label" id="lbl_Tel_1">Telephone<span style="color:red">*</span> </label>
+                                <div class="col-xs-12 col-sm-9">
+                                    <input type='text' id="txt_Tel_1" class="form-control" placeholder="Enter Telphone no" />
+                                </div>
+                            </div>
+                            <div class="col-xs-12 form-group">
+                                <label class="col-xs-12 col-sm-3 control-label" id="lbl_Mob_1">Mobile<span style="color:red">*</span> </label>
+                                <div class="col-xs-12 col-sm-9">
+                                    <input type='text' id="txt_Mob_1" class="form-control" placeholder="Enter Mobile no" />
+                                </div>
+                            </div>
+                            <div class="col-xs-12 form-group">
+                                <label class="col-xs-12 col-sm-3 control-label" id="lbl_Company_Logo_Name">Company Logo Name<span style="color:red">*</span> </label>
+                                <div class="col-xs-12 col-sm-9">
+                                    <input id="img_Company_Logo_Name" type="image" width="100" height="100" alt="~/images/no-image.jpg"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-float modal-footer">
+                    <button type="button" class="btn theme-btn-blue" id="Btn_Submit">Submit</button>
+                    <button type="button" class="btn theme-btn-grey" data-dismiss="modal" id="Btn_Cancelc">Cancel </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/Scripts/Admin/CompanyMaster.js"></script>
+</div>

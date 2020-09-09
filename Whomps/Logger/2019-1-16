@@ -1,0 +1,5 @@
+ ====> 1/16/2019 13:27:16 <==== 
+Exception Message:error
+Source:Whomps
+Target site:System.Web.Mvc.JsonResult EditRole(Int64, System.String)
+Stack Trace:   at Whomps.Controllers.Admin.AdminController.EditRole(Int64 RoleID, String MenuIDs) in C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\Whomps\Controllers\Admin\AdminController.cs:line 81

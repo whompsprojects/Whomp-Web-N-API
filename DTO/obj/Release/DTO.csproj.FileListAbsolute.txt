@@ -1,0 +1,9 @@
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\DTO\bin\Release\DTO.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\DTO\bin\Release\DTO.pdb
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\DTO\bin\Release\Newtonsoft.Json.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\DTO\obj\Release\DTO.csprojAssemblyReference.cache
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\DTO\obj\Release\DTO.csproj.CoreCompileInputs.cache
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\DTO\obj\Release\DTO.csproj.CopyComplete
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\DTO\obj\Release\DTO.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\DTO\obj\Release\DTO.pdb
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\DTO\bin\Release\Newtonsoft.Json.xml

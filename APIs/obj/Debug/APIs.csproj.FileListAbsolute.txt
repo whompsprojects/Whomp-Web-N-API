@@ -1,0 +1,367 @@
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\APIs.dll.config
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\APIs.dll
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\APIs.pdb
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\csc.exe
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\csc.exe.config
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\csc.rsp
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\csi.exe
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\csi.exe.config
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\csi.rsp
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.AppContext.dll
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Console.dll
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.IO.Compression.dll
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.IO.Pipes.dll
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Security.Claims.dll
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.ValueTuple.dll
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Xml.XPath.dll
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\vbc.exe
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\vbc.exe.config
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\vbc.rsp
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\VBCSCompiler.exe
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\Antlr3.Runtime.dll
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\DAL.dll
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\DTO.dll
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\Newtonsoft.Json.dll
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\System.Net.Http.Formatting.dll
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.Helpers.dll
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.Http.dll
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.Http.WebHost.dll
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.Mvc.dll
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.Optimization.dll
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.Razor.dll
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.WebPages.Deployment.dll
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.WebPages.dll
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.WebPages.Razor.dll
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\WebGrease.dll
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\Microsoft.ApplicationBlocks.Data.dll
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\DAL.pdb
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\DTO.pdb
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\Newtonsoft.Json.xml
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\System.Net.Http.Formatting.xml
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.Helpers.xml
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.Http.xml
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.Http.WebHost.xml
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.Mvc.xml
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.Optimization.xml
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.Razor.xml
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.WebPages.xml
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.WebPages.Deployment.xml
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.WebPages.Razor.xml
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\Antlr3.Runtime.pdb
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\obj\Debug\APIs.csprojAssemblyReference.cache
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\obj\Debug\APIs.csproj.CoreCompileInputs.cache
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\obj\Debug\APIs.csproj.CopyComplete
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\obj\Debug\APIs.dll
+C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\APIs\obj\Debug\APIs.pdb
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\APIs.dll.config
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\APIs.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\APIs.pdb
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\csc.exe
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\csc.exe.config
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\csc.rsp
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\csi.exe
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\csi.exe.config
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\csi.rsp
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\Microsoft.Managed.Core.targets
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.AppContext.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Collections.Immutable.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Console.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.IO.Compression.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.IO.FileSystem.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.IO.Pipes.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Reflection.Metadata.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Security.AccessControl.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Security.Claims.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Security.Principal.Windows.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.ValueTuple.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Xml.XmlDocument.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Xml.XPath.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\vbc.exe
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\vbc.exe.config
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\vbc.rsp
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\VBCSCompiler.exe
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\VBCSCompiler.exe.config
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\Antlr3.Runtime.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\DAL.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\DTO.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\Microsoft.Web.Infrastructure.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\Newtonsoft.Json.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\System.Diagnostics.DiagnosticSource.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\System.Net.Http.Formatting.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.Helpers.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.Http.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.Http.WebHost.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.Mvc.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.Optimization.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.Razor.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.WebPages.Deployment.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.WebPages.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.WebPages.Razor.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\WebGrease.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\Microsoft.ApplicationBlocks.Data.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\DAL.pdb
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\DTO.pdb
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\Newtonsoft.Json.pdb
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\Newtonsoft.Json.xml
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\System.Net.Http.Formatting.xml
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.Helpers.xml
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.Http.xml
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.Http.WebHost.xml
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.Mvc.xml
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.Optimization.xml
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.Razor.xml
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.WebPages.xml
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.WebPages.Deployment.xml
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.WebPages.Razor.xml
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\Antlr3.Runtime.pdb
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\System.Diagnostics.DiagnosticSource.xml
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\obj\Debug\APIs.csprojAssemblyReference.cache
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\obj\Debug\APIs.csproj.CoreCompileInputs.cache
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\obj\Debug\APIs.csproj.CopyComplete
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\obj\Debug\APIs.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\APIs\obj\Debug\APIs.pdb
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\APIs.dll.config
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\APIs.dll
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\APIs.pdb
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\csc.exe
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\csc.exe.config
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\csc.rsp
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\csi.exe
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\csi.exe.config
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\csi.rsp
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.AppContext.dll
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Console.dll
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.IO.Compression.dll
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.IO.Pipes.dll
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Security.Claims.dll
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.ValueTuple.dll
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Xml.XPath.dll
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\vbc.exe
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\vbc.exe.config
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\vbc.rsp
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\VBCSCompiler.exe
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\Antlr3.Runtime.dll
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\DAL.dll
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\DTO.dll
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\Newtonsoft.Json.dll
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\System.Net.Http.Formatting.dll
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.Helpers.dll
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.Http.dll
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.Http.WebHost.dll
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.Mvc.dll
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.Optimization.dll
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.Razor.dll
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.WebPages.Deployment.dll
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.WebPages.dll
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.WebPages.Razor.dll
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\WebGrease.dll
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\Microsoft.ApplicationBlocks.Data.dll
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\DAL.pdb
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\DTO.pdb
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\Newtonsoft.Json.pdb
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\Newtonsoft.Json.xml
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\System.Net.Http.Formatting.xml
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.Helpers.xml
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.Http.xml
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.Http.WebHost.xml
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.Mvc.xml
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.Optimization.xml
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.Razor.xml
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.WebPages.xml
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.WebPages.Deployment.xml
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.WebPages.Razor.xml
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\Antlr3.Runtime.pdb
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\obj\Debug\APIs.csprojAssemblyReference.cache
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\obj\Debug\APIs.csproj.CoreCompileInputs.cache
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\obj\Debug\APIs.csproj.CopyComplete
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\obj\Debug\APIs.dll
+C:\Users\SANDEEP\Google Drive\WhompsWebSite\Code\Whomps\APIs\obj\Debug\APIs.pdb
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\APIs.dll.config
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\APIs.dll
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\APIs.pdb
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\csc.exe
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\csc.exe.config
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\csc.rsp
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\csi.exe
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\csi.exe.config
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\csi.rsp
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\Microsoft.Managed.Core.targets
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.AppContext.dll
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Collections.Immutable.dll
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Console.dll
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.IO.Compression.dll
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.IO.FileSystem.dll
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.IO.Pipes.dll
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Reflection.Metadata.dll
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Security.AccessControl.dll
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Security.Claims.dll
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Security.Principal.Windows.dll
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.ValueTuple.dll
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Xml.XmlDocument.dll
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Xml.XPath.dll
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\vbc.exe
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\vbc.exe.config
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\vbc.rsp
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\VBCSCompiler.exe
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\roslyn\VBCSCompiler.exe.config
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\Antlr3.Runtime.dll
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\DAL.dll
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\DTO.dll
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\Microsoft.Web.Infrastructure.dll
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\Newtonsoft.Json.dll
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\System.Diagnostics.DiagnosticSource.dll
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\System.Net.Http.Formatting.dll
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.Helpers.dll
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.Http.dll
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.Http.WebHost.dll
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.Mvc.dll
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.Optimization.dll
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.Razor.dll
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.WebPages.Deployment.dll
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.WebPages.dll
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.WebPages.Razor.dll
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\WebGrease.dll
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\Microsoft.ApplicationBlocks.Data.dll
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\DAL.pdb
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\DTO.pdb
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\Newtonsoft.Json.pdb
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\Newtonsoft.Json.xml
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\System.Net.Http.Formatting.xml
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.Helpers.xml
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.Http.xml
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.Http.WebHost.xml
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.Mvc.xml
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.Optimization.xml
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.Razor.xml
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.WebPages.xml
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.WebPages.Deployment.xml
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\System.Web.WebPages.Razor.xml
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\Antlr3.Runtime.pdb
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\System.Diagnostics.DiagnosticSource.xml
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\obj\Debug\APIs.csprojAssemblyReference.cache
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\obj\Debug\APIs.csproj.CoreCompileInputs.cache
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\obj\Debug\APIs.csproj.CopyComplete
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\obj\Debug\APIs.dll
+E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\APIs\obj\Debug\APIs.pdb

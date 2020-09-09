@@ -1,0 +1,53 @@
+﻿@{
+    ViewBag.Title = "AssignAccessMaster";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="col-xs-12 alert-msgs">
+    <label id="lblErr" class="error" for="usertype" style="color:#fff; display:none;"><b>Record updated successfully</b></label>
+</div>
+<div class="body-wrapper">
+    <h3 class="page-title-heading">MANAGE ACCESS</h3>
+    <div id="divErr">
+        <h4>     <label id="lblErrr" class="error" for="usertype" style="color:red;display:none">Select aleast one module</label></h4>
+    </div>
+    <script>
+        var getData = @Html.Raw(Json.Encode(@ViewBag.getData));
+        var getEditRoleData_URL="@Url.Action("GetRoleEdit", "Admin")";
+        var editRole_URL="@Url.Action("EditRole", "Admin")";
+    </script>
+    <div id="div_GetRoleSection" class="manage_area">
+        <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="row">
+                <div class="srchBox">
+                    <input type="text" id="txt_SearchByRole" class="srchInput" placeholder="Search role" />
+                    <i class="fa fa-search"></i>
+                </div>
+            </div>
+        </div>
+        <div class="table-responsive table-div">
+            <table id="tbl_AssignAccessMaster"></table>
+        </div>
+    </div>
+    <div id="div_EditRoleSection" class="main-box-section inner-box-section box-layout">
+        <div class="col-xs-12 inner-box-layout">
+            <div class="row">
+                <div class="box-page-heading">Add Access</div>
+                <div class="col-xs-12 blockkDiv rowDiv" style="display:none" id="RoleDiv">
+                    <label class="col-xs-12 col-sm-3 col-md-2 control-label" style="display:none" id="lblRole">Select Role:</label>
+                    <div class="col-xs-12 col-sm-9 col-md-10" style="display:none" id="ddlDiv">
+                        <select id="ddl_Role" class="form-control" style="display:none"></select>
+                    </div>
+                </div>
+                <div class="col-xs-12 blockkDiv rowDiv" style="display:none" id="AssignDiv">
+                    <label class="col-xs-12 col-sm-3 col-md-2 control-label" style="display:none" id="lblAssign">Assign To:</label>
+                    <div class="col-xs-12 col-sm-9 col-md-10 manage_assigned_div"><div id="div_Menu" class="manage_assigned_list"></div></div>
+                </div>
+            </div>
+        </div>
+        <div class="btn-actions-div btn-float pull-right" style="display:none" id="btndiv">
+            <input type="button" class="btn theme-btn-blue" id="btn_Submit" style="display:none" value="Submit" />
+            <input type="button" class="btn theme-btn-grey" id="btn_Cancel" style="display:none" value="Cancel" />
+        </div>
+    </div>
+</div>
+<script src="~/Scripts/Admin/AssignAccessMaster.js"></script>

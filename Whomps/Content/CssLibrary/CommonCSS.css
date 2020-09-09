@@ -1,0 +1,26 @@
+﻿.disable {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+    color: black;
+}
+
+.hand {
+    cursor: pointer;
+}
+
+.err {
+    box-shadow: 4px 4px 20px rgba(200, 0, 0, 0.85);
+}
+
+.colMargin {
+    margin-bottom: 15px;
+}
+
+.clMandty{
+    color:red;
+}
+
+a {
+    cursor: pointer;
+}

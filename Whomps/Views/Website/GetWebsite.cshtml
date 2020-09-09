@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "List of Website";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="body-wrapper">
+    <h3 class="page-title-heading">MANAGE Website</h3>
+    <script>
+        var WebsiteDetail = @Html.Raw(Json.Encode(@ViewBag.WebsiteDetail));
+        var UpdateWebStatus_URL = "@Url.Action("UpdateWebStatus", "Website")";
+        var S_User_ID="@Session["User_ID"]";
+        var S_Role_ID="@Session["Role_ID"]";
+    </script>
+    <div class="clearfix box-content">
+        <table id="tbl_GetWebsite" class="table table-hover table-striped" width="100%">
+            <thead>
+                <tr>
+                    <th style='display: none'>Web_ID</th>
+                    <th>Logo</th>
+                    <th>CompanyName</th>
+                    <th>Status</th>
+                    <th>Created_By</th>
+                    <th>Create Date</th>
+                    <th>Update By</th>
+                    <th>Update Date</th>
+                    <th>#</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</div>
+
+<script src="~/Scripts/Admin/GetWebsite.js"></script>

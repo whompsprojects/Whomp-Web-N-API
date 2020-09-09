@@ -1,0 +1,49 @@
+ ====> 1/12/2019 6:37:58 PM <==== 
+Exception Message:One or more errors occurred.
+Source:mscorlib
+Target site:Void ThrowIfExceptional(Boolean)
+Stack Trace:   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at Whomps.Controllers.Admin.AdminController.GetRoleEdit(Int64 roleID)
+ ====> 1/12/2019 6:46:58 PM <==== 
+Exception Message:One or more errors occurred.
+Source:mscorlib
+Target site:Void ThrowIfExceptional(Boolean)
+Stack Trace:   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at Whomps.Controllers.Admin.AdminController.GetRoleEdit(Int64 roleID) in C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\Whomps\Controllers\Admin\AdminController.cs:line 53
+ ====> 1/12/2019 6:48:55 PM <==== 
+Exception Message:One or more errors occurred.
+Source:mscorlib
+Target site:Void ThrowIfExceptional(Boolean)
+Stack Trace:   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at Whomps.Controllers.Admin.AdminController.GetRoleEdit(Int64 roleID) in C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\Whomps\Controllers\Admin\AdminController.cs:line 53
+ ====> 1/12/2019 7:38:21 PM <==== 
+Exception Message:error
+Source:Whomps
+Target site:System.Web.Mvc.JsonResult EditRole(Int64, System.String)
+Stack Trace:   at Whomps.Controllers.Admin.AdminController.EditRole(Int64 RoleID, String MenuIDs) in C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\Whomps\Controllers\Admin\AdminController.cs:line 81
+ ====> 1/12/2019 7:40:04 PM <==== 
+Exception Message:error
+Source:Whomps
+Target site:System.Web.Mvc.JsonResult GetMenu()
+Stack Trace:   at Whomps.Controllers.DashboardController.GetMenu() in C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\Whomps\Controllers\DashboardController.cs:line 56
+ ====> 1/12/2019 7:40:04 PM <==== 
+Exception Message:error
+Source:Whomps
+Target site:System.Web.Mvc.JsonResult GetMenu()
+Stack Trace:   at Whomps.Controllers.DashboardController.GetMenu() in C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\Whomps\Controllers\DashboardController.cs:line 56
+ ====> 1/12/2019 7:40:08 PM <==== 
+Exception Message:error
+Source:Whomps
+Target site:System.Web.Mvc.JsonResult GetMenu()
+Stack Trace:   at Whomps.Controllers.DashboardController.GetMenu() in C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\Whomps\Controllers\DashboardController.cs:line 56
+ ====> 1/12/2019 7:40:09 PM <==== 
+Exception Message:error
+Source:Whomps
+Target site:System.Web.Mvc.JsonResult GetMenu()
+Stack Trace:   at Whomps.Controllers.DashboardController.GetMenu() in C:\Users\sandeep.maurya\Google Drive\WhompsWebSite\Code\Whomps\Whomps\Controllers\DashboardController.cs:line 56

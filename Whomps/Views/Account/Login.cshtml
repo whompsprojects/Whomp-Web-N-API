@@ -1,0 +1,103 @@
+﻿@model DTO.Account.Account_DTO
+@{
+    ViewBag.Title = "Log in";
+    Layout = null;
+}
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>@ViewBag.Title - Whomps</title>
+@Styles.Render("~/Content/css")
+<link rel="shortcut icon" href="~/Content/Images/favicon_io/favicon.ico" type="image/x-icon" />
+<link href="~/Content/CssLibrary/bootstrap.css" rel="stylesheet" />
+<link href="~/Content/CssLibrary/responsive.css" rel="stylesheet" />
+<link href="~/Content/CssLibrary/Site.css" rel="stylesheet" />
+<link href="~/Content/CssLibrary/style.css" rel="stylesheet" />
+<style>
+    .error {
+        color: red;
+        font-weight: 300;
+    }
+</style>
+<script src="~/Scripts/Library/jquery-3.2.1.min.js"></script>
+<script language="javascript" type="text/javascript">
+    $(document).ready(function () {
+
+        $("#email_id").focus();
+        $("#email_id").keypress(function () {
+            $('#lblUserName').html('');
+        });
+        $("#PWD").keypress(function () {
+            $('#lblPassword').html('');
+        });
+
+        $('#btnSignIn').click(function (e) {
+            var bIsErrExist = false;
+
+            if ($.trim($("#email_id").val()) == "") {
+                $('#lblUserName').html("Username can not be left blank");
+                $('#lblUserName').removeAttr("style", "display:none");
+                bIsErrExist = true;
+            }
+            if ($.trim($("#pwd").val()) == "") {
+                $('#lblPassword').html("Password can not be left blank");
+                $('#lblPassword').removeAttr("style", "display:none");
+                bIsErrExist = true;
+            }
+
+            if (bIsErrExist == true)
+                return false;
+        });
+        $('#btnReset').click(function (e) {
+            $("#email_id").val("");
+            $("#pwd").val("");
+            $("#email_id").focus();
+        });
+    });
+</script>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="col-sm-6 col-md-6 col-lg-3  login-main-section">
+                <img src="~/Content/Images/CompressLogoWhomps.png" class="img-responsive" />
+                <section id="loginForm">
+                    @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                    {
+                        @Html.AntiForgeryToken()
+                        <h4>Login to Your Account</h4>
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                        <div class="form-group">
+                            <div class="col-md-10 login-input">
+                                @Html.TextBoxFor(m => m.email_id, new { @class = "form-control", @placeholder = "Username" })
+                                <label id="lblUserName" class="error" style="display: none"></label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-10 login-input">
+                                @Html.PasswordFor(m => m.pwd, new { @class = "form-control", @placeholder = "PWD" })
+                                <div class="error">
+                                    @ViewBag.Message
+                                </div>
+                                <label id="lblPassword" class="error" style="display: none"></label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-10 login-btn-box">
+                                @using (Html.BeginForm("Login", "Account", FormMethod.Post))
+                                {
+                                    <input type="submit" value="Login" id="btnSignIn" class="btn login-btn" />
+                                }
+                            </div>
+                        </div>
+                        <p>
+                            <a href="@Url.Action("ForgotPassword", "Account")" class="forgotPass" title="Forgot Password">Forgot your password?</a>
+                        </p>
+                    }
+                </section>
+            </div>
+        </div>
+
+    </div>
+</div>
+

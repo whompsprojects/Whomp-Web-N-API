@@ -1,0 +1,12 @@
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\DAL\bin\Release\DAL.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\DAL\bin\Release\DAL.pdb
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\DAL\bin\Release\DTO.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\DAL\bin\Release\Microsoft.ApplicationBlocks.Data.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\DAL\bin\Release\Newtonsoft.Json.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\DAL\bin\Release\DTO.pdb
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\DAL\bin\Release\Newtonsoft.Json.xml
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\DAL\obj\Release\DAL.csprojAssemblyReference.cache
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\DAL\obj\Release\DAL.csproj.CoreCompileInputs.cache
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\DAL\obj\Release\DAL.csproj.CopyComplete
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\DAL\obj\Release\DAL.dll
+C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\DAL\obj\Release\DAL.pdb
