@@ -1,8 +1,0 @@
- ====> 6/1/2019 07:15:29 PM <==== 
-Exception Message:Path '/Views/Website/EMailTemplates/T1_LeadGeneration.html' was not found.
-Source:System.Web
-Target site:Void ProcessRequest(System.Web.HttpContext)
-Stack Trace:   at System.Web.HttpNotFoundHandler.ProcessRequest(HttpContext context)
-   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
-   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
-   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)

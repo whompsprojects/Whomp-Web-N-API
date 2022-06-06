@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "1efad7c5-2b95-4c4a-a80c-c429cc2cff11": {
+      "ProjectGuid": "1efad7c5-2b95-4c4a-a80c-c429cc2cff11",
+      "DisplayName": "DTO",
+      "ColorIndex": 0
+    },
+    "2463db04-b705-4863-9902-cd9b9ddcb90d": {
+      "ProjectGuid": "2463db04-b705-4863-9902-cd9b9ddcb90d",
+      "DisplayName": "APIs",
+      "ColorIndex": 1
+    },
+    "da266303-e19e-4b90-8144-a0bcb8cd6f1d": {
+      "ProjectGuid": "da266303-e19e-4b90-8144-a0bcb8cd6f1d",
+      "DisplayName": "DAL",
+      "ColorIndex": 2
+    },
+    "a8d3c9c6-0fe5-4761-b421-2c0830131330": {
+      "ProjectGuid": "a8d3c9c6-0fe5-4761-b421-2c0830131330",
+      "DisplayName": "Whomps",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}

@@ -10,3 +10,14 @@ C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\DAL\obj\Release\DAL.csproj.C
 C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\DAL\obj\Release\DAL.csproj.CopyComplete
 C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\DAL\obj\Release\DAL.dll
 C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\DAL\obj\Release\DAL.pdb
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DAL\bin\Release\DAL.dll
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DAL\bin\Release\DAL.pdb
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DAL\bin\Release\DTO.dll
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DAL\bin\Release\Microsoft.ApplicationBlocks.Data.dll
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DAL\bin\Release\Newtonsoft.Json.dll
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DAL\bin\Release\DTO.pdb
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DAL\obj\Release\DAL.csproj.AssemblyReference.cache
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DAL\obj\Release\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DAL\obj\Release\DAL.csproj.CopyComplete
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DAL\obj\Release\DAL.dll
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DAL\obj\Release\DAL.pdb

@@ -7,3 +7,11 @@ C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\DTO\obj\Release\DTO.csproj.C
 C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\DTO\obj\Release\DTO.dll
 C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\DTO\obj\Release\DTO.pdb
 C:\MyJob\junk\WhompsDrive\WhompsWebSite\Code\Whomps\DTO\bin\Release\Newtonsoft.Json.xml
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DTO\bin\Release\DTO.dll
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DTO\bin\Release\DTO.pdb
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DTO\bin\Release\Newtonsoft.Json.dll
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DTO\obj\Release\DTO.csproj.AssemblyReference.cache
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DTO\obj\Release\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DTO\obj\Release\DTO.csproj.CopyComplete
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DTO\obj\Release\DTO.dll
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DTO\obj\Release\DTO.pdb

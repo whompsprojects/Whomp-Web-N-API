@@ -56,3 +56,14 @@ E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\DAL\obj\Debug\DAL.csp
 E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\DAL\obj\Debug\DAL.csproj.CopyComplete
 E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\DAL\obj\Debug\DAL.dll
 E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\DAL\obj\Debug\DAL.pdb
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DAL\bin\Debug\DAL.dll
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DAL\bin\Debug\DAL.pdb
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DAL\bin\Debug\DTO.dll
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DAL\bin\Debug\Microsoft.ApplicationBlocks.Data.dll
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DAL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DAL\bin\Debug\DTO.pdb
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DAL\obj\Debug\DAL.dll
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DAL\obj\Debug\DAL.pdb

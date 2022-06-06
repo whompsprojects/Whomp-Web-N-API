@@ -738,7 +738,7 @@ namespace DTO
         static string GetDBQueryString()
         {
             if (IsLocal)
-                DBQueryString = "Data Source=.;Initial Catalog=WhompWebsite;User ID=Whomp;password=no1can@2012;";
+                DBQueryString = @"Data Source=VF317\MSSQLSERVER01;Initial Catalog=WhompWebsite;User ID=whomps;password=whomps;";
             else
                 DBQueryString = "Data Source=.\\SQLEXPRESS;Initial Catalog=WhompWebsite_V1;User ID=Whomp;password=no1can@2012;";
             return DBQueryString;
@@ -747,7 +747,8 @@ namespace DTO
         static string Getprfx()
         {
             if (IsLocal)
-                prfx = "http://localhost:57704/API/";
+                //prfx = "http://localhost:57704/API/";
+            prfx = "http://192.168.1.44/API/";
             else
                 prfx = "http://localhost/WhompsApi/API/";
             return prfx;
