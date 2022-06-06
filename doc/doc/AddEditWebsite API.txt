@@ -1,0 +1,587 @@
+http://localhost:57704/API/Website/AddEditWebsite
+
+	Content-Type : application/json
+	Authorization : Basic WhompAuthName:authValue
+
+{  
+   "WebHdr":{  
+      "Web_ID":0,
+      "Is_Add":true,
+      "User_ID":1,
+      "Timing_Detail":"Monday - Friday, 11am to 7pm",
+      "Contact_Detail":"Call us now +75 06 539510",
+      "Hdr_BkGrnd_Img":"../Content/Images/WebsiteCreation/Whomps_1/Hdr/hdr_bg.jpg",
+      "IsChangeImg_Hdr_BkGrnd_Img":false,
+      "Ext_Hdr_BkGrnd_Img":"1.jpg",
+      "Logo_Path":"../Content/Images/WebsiteCreation/Whomps_1/Hdr/Logo.png",
+      "IsChangeImg_Logo_Path":false,
+      "Ext_Logo_Path":"1.png",
+      "Slogan_H1":"Whomps IT group",
+      "Slogan_H2":"Provide <span class=\"color\">best quality IT solution</span> for you",
+      "Fields_Hdr":"Generate a Quote <small>(It's free!)</small>",
+      "Emergency_Hdr_Desc":"In an emergency? Need help now?",
+      "Emergency_Desc":"Lorem ipsum dolor sit amet consectetur adipiscing elit uisque interdum ante eget faucibus. ",
+      "EmergencyBtn_Desc":"Book an appoinment",
+      "Product_Hdr_Img_Path":"../Content/Images\\WebsiteCreation\\Whomps_1\\Hdr/product_hdr.jpg",
+      "IsChangeImg_Product_Hdr_Img_Path":false,
+      "Ext_Product_Hdr_Img_Path":"1.jpg",
+      "Team_Hdr_Desc":"Doctors",
+      "Team_Desc":"Ea melius ceteros oportere quo, pri habeo viderer facilisi ei",
+      "Facilities_Hdr_Desc":"Our facilities",
+      "Facilities_Desc":"Ea melius ceteros oportere quo, pri habeo viderer facilisi ei",
+      "FeedBk_BkGrnd_Img":"../Content/Images/WebsiteCreation/Whomps_1/Hdr/feedbck_bg.jpg",
+      "IsChangeImg_FeedBk_BkGrnd_Img":false,
+      "Ext_FeedBk_BkGrnd_Img":"1.jpg",
+      "Packages_Hdr_Desc":"Health packages",
+      "Packages_Desc":"Take charge of your health today with our specially designed health packages",
+      "Partner_Hdr_Desc":"Our partner",
+      "Partner_Desc":"Take charge of your health today with our specially designed health packages",
+      "About_Hdr_Desc":"About Medicio",
+      "About_Desc":"Lorem ipsum dolor sit amet, ne nam purto nihil impetus, an facilisi accommodare sea",
+      "Information_Hdr_Desc":"Information",
+      "Center_Hdr_Desc":"Medicio center",
+      "Center_Desc":"Nam leo lorem, tincidunt id risus ut, ornare tincidunt naqunc sit amet.",
+      "Location_Hdr_Desc":"Our location",
+      "Location_Desc":"The Suithouse V303, Kuningan City, Jakarta Indonesia 12940",
+      "SocailNtwk_Hdr_Desc":"Follow us",
+      "Company_URL":null,
+      "Whomps_URL":null,
+      "Company_Name":"asdf",
+      "Contact_Person":"asdfgv",
+      "Company_Email":"abc@gmail.com",
+      "Mob_1":"qwerf",
+      "Tel_1":"werfg",
+      "Aadhar_Card_NO":"qwerfg",
+      "Pan_Card_No":"qwedfg",
+      "Company_Specialist_In":"wedfgb",
+      "Company_Address":"qwedfg",
+      "ThemeID":6,
+      "ThemeText":"blue",
+      "Company_Email_PWD":null
+   },
+   "WebDET":{  
+      "Menu":{  
+         "arr":[  
+            {  
+               "Menu_Name":"Home",
+               "Href":"#intro",
+               "ParentID":0
+            },
+            {  
+               "Menu_Name":"Solution",
+               "Href":"#product",
+               "ParentID":0
+            },
+            {  
+               "Menu_Name":"Expert",
+               "Href":"#team",
+               "ParentID":0
+            },
+            {  
+               "Menu_Name":"Facilities",
+               "Href":"#facilities",
+               "ParentID":0
+            },
+            {  
+               "Menu_Name":"Pricing",
+               "Href":"#pricing",
+               "ParentID":0
+            },
+            {  
+               "Menu_Name":"Home form",
+               "Href":"index.html",
+               "ParentID":1
+            },
+            {  
+               "Menu_Name":"Home video",
+               "Href":"index-video.html",
+               "ParentID":1
+            },
+            {  
+               "Menu_Name":"Home CTA",
+               "Href":"index-cta.html",
+               "ParentID":1
+            }
+         ]
+      },
+      "Slogan":{  
+         "arr":[  
+            {  
+               "Slogan_Name":"Affordable monthly premium",
+               "Slogan_Desc":"We have many solution in field of BMS,E-Com"
+            },
+            {  
+               "Slogan_Name":"Get best solution for complex operation",
+               "Slogan_Desc":"We have professional in technology sector"
+            },
+            {  
+               "Slogan_Name":"Only use friendly &amp; qualtity environment",
+               "Slogan_Desc":"Friendly environment with both client &amp; employess"
+            }
+         ]
+      },
+      "Lead_Fields":{  
+         "arr":[  
+            {  
+               "Field_Key":"1",
+               "Field_Value":"First Name",
+               "Field_Text":null
+            },
+            {  
+               "Field_Key":"2",
+               "Field_Value":"Last Name",
+               "Field_Text":null
+            },
+            {  
+               "Field_Key":"3",
+               "Field_Value":"Email",
+               "Field_Text":null
+            },
+            {  
+               "Field_Key":"4",
+               "Field_Value":"Phone number",
+               "Field_Text":null
+            }
+         ],
+         "Web_ID":0
+      },
+      "Oper_Flow":{  
+         "arr":[  
+            {  
+               "Oper_Flow_Name":"Generate a Quote",
+               "Oper_Flow_Icon":"fa fa-check fa-3x circled bg-skin",
+               "Oper_Flow_Det":"Lorem ipsum dolor sit amet, nec te mollis utroque honestatis, ut utamur molestiae vix, graecis eligendi ne."
+            },
+            {  
+               "Oper_Flow_Name":"Choose your package",
+               "Oper_Flow_Icon":"fa fa-list-alt fa-3x circled bg-skin",
+               "Oper_Flow_Det":"Lorem ipsum dolor sit amet, nec te mollis utroque honestatis, ut utamur molestiae vix, graecis eligendi ne."
+            },
+            {  
+               "Oper_Flow_Name":"Help by specialist",
+               "Oper_Flow_Icon":"fa fa-user-md fa-3x circled bg-skin",
+               "Oper_Flow_Det":"Lorem ipsum dolor sit amet, nec te mollis utroque honestatis, ut utamur molestiae vix, graecis eligendi ne."
+            },
+            {  
+               "Oper_Flow_Name":"Get POC",
+               "Oper_Flow_Icon":"fa fa-hospital-o fa-3x circled bg-skin",
+               "Oper_Flow_Det":"Lorem ipsum dolor sit amet, nec te mollis utroque honestatis, ut utamur molestiae vix, graecis eligendi ne."
+            }
+         ]
+      },
+      "Products":{  
+         "arr":[  
+            {  
+               "Product_Name":"Medical checkup",
+               "Product_Icon":"fa fa-stethoscope fa-3x",
+               "Product_Det":"Vestibulum tincidunt enim in pharetra malesuada."
+            },
+            {  
+               "Product_Name":"Nursing Services",
+               "Product_Icon":"fa fa-wheelchair fa-3x",
+               "Product_Det":"Vestibulum tincidunt enim in pharetra malesuada."
+            },
+            {  
+               "Product_Name":"Pharmacy",
+               "Product_Icon":"fa fa-plus-square fa-3x",
+               "Product_Det":"Vestibulum tincidunt enim in pharetra malesuada."
+            },
+            {  
+               "Product_Name":"Gyn Care",
+               "Product_Icon":"fa fa-h-square fa-3x",
+               "Product_Det":"Vestibulum tincidunt enim in pharetra malesuada."
+            },
+            {  
+               "Product_Name":"Neurology",
+               "Product_Icon":"fa fa-filter fa-3x",
+               "Product_Det":"Vestibulum tincidunt enim in pharetra malesuada."
+            },
+            {  
+               "Product_Name":"Sleep Center",
+               "Product_Icon":"fa fa-user-md fa-3x",
+               "Product_Det":"Vestibulum tincidunt enim in pharetra malesuada."
+            }
+         ]
+      },
+      "Team":{  
+         "arr":[  
+            {  
+               "Team_Name":"Alice Grue",
+               "Team_Department_Code":1,
+               "Team_Desc":"",
+               "Img":"../Content/Images\\WebsiteCreation\\Whomps_1\\Team\\1.jpg",
+               "IsChangeImg":false,
+               "Ext_Img":"1.jpg"
+            },
+            {  
+               "Team_Name":"Joseph Murphy",
+               "Team_Department_Code":2,
+               "Team_Desc":"",
+               "Img":"../Content/Images/WebsiteCreation/Whomps_1/Team/2.jpg",
+               "IsChangeImg":false,
+               "Ext_Img":"2.jpg"
+            },
+            {  
+               "Team_Name":"Alison Davis",
+               "Team_Department_Code":3,
+               "Team_Desc":"",
+               "Img":"../Content/Images/WebsiteCreation/Whomps_1/Team/3.jpg",
+               "IsChangeImg":false,
+               "Ext_Img":"3.jpg"
+            },
+            {  
+               "Team_Name":"Alice Grue",
+               "Team_Department_Code":1,
+               "Team_Desc":"",
+               "Img":"../Content/Images/WebsiteCreation/Whomps_1/Team/4.jpg",
+               "IsChangeImg":false,
+               "Ext_Img":"4.jpg"
+            },
+            {  
+               "Team_Name":"Jackson",
+               "Team_Department_Code":2,
+               "Team_Desc":"",
+               "Img":"../Content/Images/WebsiteCreation/Whomps_1/Team/1.jpg",
+               "IsChangeImg":false,
+               "Ext_Img":"5.jpg"
+            }
+         ]
+      },
+      "TeamDepartment":{  
+         "arr":[  
+            {  
+               "Department_Code":0,
+               "Department_Name":"All"
+            },
+            {  
+               "Department_Code":1,
+               "Department_Name":"Psychiatrist"
+            },
+            {  
+               "Department_Code":2,
+               "Department_Name":"Cardiologist"
+            },
+            {  
+               "Department_Code":3,
+               "Department_Name":"Neurologist"
+            }
+         ]
+      },
+      "Facility":{  
+         "arr":[  
+            {  
+               "Img":"../Content/Images/WebsiteCreation/Whomps_1/Facility/1.jpg",
+               "Facility_Title":"This is an image title",
+               "IsChangeImg":false,
+               "Ext_Img":"1.jpg"
+            },
+            {  
+               "Img":"../Content/Images/WebsiteCreation/Whomps_1/Facility/2.jpg",
+               "Facility_Title":"This is an image title",
+               "IsChangeImg":false,
+               "Ext_Img":"2.jpg"
+            },
+            {  
+               "Img":"../Content/Images/WebsiteCreation/Whomps_1/Facility/3.jpg",
+               "Facility_Title":"This is an image title",
+               "IsChangeImg":false,
+               "Ext_Img":"3.jpg"
+            },
+            {  
+               "Img":"../Content/Images/WebsiteCreation/Whomps_1/Facility/4.jpg",
+               "Facility_Title":"This is an image title",
+               "IsChangeImg":false,
+               "Ext_Img":"4.jpg"
+            },
+            {  
+               "Img":"../Content/Images/WebsiteCreation/Whomps_1/Facility/5.jpg",
+               "Facility_Title":"This is an image title",
+               "IsChangeImg":false,
+               "Ext_Img":"5.jpg"
+            },
+            {  
+               "Img":"../Content/Images/WebsiteCreation/Whomps_1/Facility/6.jpg",
+               "Facility_Title":"This is an image title",
+               "IsChangeImg":false,
+               "Ext_Img":"6.jpg"
+            }
+         ]
+      },
+      "FeedBk":{  
+         "arr":[  
+            {  
+               "FeedBk_Name":"Anna",
+               "FeedBk_Title":"Emergency Contraception",
+               "FeedBk_Rate":4,
+               "FeedBk_Desc":"Ne eam errem semper. Laudem detracto phaedrum cu vim, pri cu errem fierent fabellas. Quis magna in ius, pro vidit nonumy te, nostrud ...",
+               "Img":"../Content/Images/WebsiteCreation/Whomps_1/FeedBk/1.jpg",
+               "FeedBk_Loctn":"Chicago, Illinois",
+               "IsChangeImg":false,
+               "Ext_Img":"1.jpg"
+            },
+            {  
+               "FeedBk_Name":"Matthew G",
+               "FeedBk_Title":"Orthopedic Surgery",
+               "FeedBk_Rate":2,
+               "FeedBk_Desc":"Ne eam errem semper. Laudem detracto phaedrum cu vim, pri cu errem fierent fabellas. Quis magna in ius, pro vidit nonumy te, nostrud ...",
+               "Img":"../Content/Images/WebsiteCreation/Whomps_1/FeedBk/2.jpg",
+               "FeedBk_Loctn":"San Antonio, Texas",
+               "IsChangeImg":false,
+               "Ext_Img":"2.jpg"
+            },
+            {  
+               "FeedBk_Name":"Scarlet Smith",
+               "FeedBk_Title":"Medical consultation",
+               "FeedBk_Rate":6,
+               "FeedBk_Desc":"Ne eam errem semper. Laudem detracto phaedrum cu vim, pri cu errem fierent fabellas. Quis magna in ius, pro vidit nonumy te, nostrud ...",
+               "Img":"../Content/Images/WebsiteCreation/Whomps_1/FeedBk/3.jpg",
+               "FeedBk_Loctn":"Dallas, Texas",
+               "IsChangeImg":false,
+               "Ext_Img":"3.jpg"
+            },
+            {  
+               "FeedBk_Name":"Lucas Thompson",
+               "FeedBk_Title":"Birth control pills",
+               "FeedBk_Rate":4,
+               "FeedBk_Desc":"Ne eam errem semper. Laudem detracto phaedrum cu vim, pri cu errem fierent fabellas. Quis magna in ius, pro vidit nonumy te, nostrud ...",
+               "Img":"../Content/Images/WebsiteCreation/Whomps_1/FeedBk/4.jpg",
+               "FeedBk_Loctn":"Austin, Texas",
+               "IsChangeImg":false,
+               "Ext_Img":"4.jpg"
+            },
+            {  
+               "FeedBk_Name":"Ella Mentree",
+               "FeedBk_Title":"Radiology",
+               "FeedBk_Rate":2,
+               "FeedBk_Desc":"Ne eam errem semper. Laudem detracto phaedrum cu vim, pri cu errem fierent fabellas. Quis magna in ius, pro vidit nonumy te, nostrud ...",
+               "Img":"../Content/Images/WebsiteCreation/Whomps_1/FeedBk/5.jpg",
+               "FeedBk_Loctn":"Fort Worth, Texas",
+               "IsChangeImg":false,
+               "Ext_Img":"5.jpg"
+            },
+            {  
+               "FeedBk_Name":"Suzanne Adam",
+               "FeedBk_Title":"Cervical Lesions",
+               "FeedBk_Rate":6,
+               "FeedBk_Desc":"Ne eam errem semper. Laudem detracto phaedrum cu vim, pri cu errem fierent fabellas. Quis magna in ius, pro vidit nonumy te, nostrud ...",
+               "Img":"../Content/Images/WebsiteCreation/Whomps_1/FeedBk/6.jpg",
+               "FeedBk_Loctn":"Detroit, Michigan",
+               "IsChangeImg":false,
+               "Ext_Img":"6.jpg"
+            }
+         ]
+      },
+      "Package":{  
+         "arr":[  
+            {  
+               "PackID":1,
+               "Pack_Name":"Basic Fit 1 Package",
+               "Pack_Sub_Name":"\n                                                    <i class=\"fa fa-inr\" aria-hidden=\"true\"></i>33<span>/ one time</span>\n                                                ",
+               "Pack_BTN_HDR_Name":"Purchase"
+            },
+            {  
+               "PackID":2,
+               "Pack_Name":"Golden Glow Package",
+               "Pack_Sub_Name":"\n                                                    <i class=\"fa fa-inr\" aria-hidden=\"true\"></i>33<span>/ one time</span>\n                                                ",
+               "Pack_BTN_HDR_Name":"Purchase"
+            },
+            {  
+               "PackID":3,
+               "Pack_Name":"Basic Fit 2 Package",
+               "Pack_Sub_Name":"\n                                                    <i class=\"fa fa-inr\" aria-hidden=\"true\"></i>33<span>/ one time</span>\n                                                ",
+               "Pack_BTN_HDR_Name":"Purchase"
+            },
+            {  
+               "PackID":4,
+               "Pack_Name":"Basic Fit 1 Package",
+               "Pack_Sub_Name":"\n                                                    <i class=\"fa fa-inr\" aria-hidden=\"true\"></i>33<span>/ one time</span>\n                                                ",
+               "Pack_BTN_HDR_Name":"Purchase"
+            }
+         ]
+      },
+      "Pack_Point_Det":{  
+         "arr":[  
+            {  
+               "PackID":1,
+               "Pack_Point":"Anthropometry (BMI, WH Ratio) ",
+               "Is_Pack_Point_Chk":false
+            },
+            {  
+               "PackID":1,
+               "Pack_Point":"Post Examination Review",
+               "Is_Pack_Point_Chk":false
+            },
+            {  
+               "PackID":1,
+               "Pack_Point":"General Screening – Basic",
+               "Is_Pack_Point_Chk":false
+            },
+            {  
+               "PackID":1,
+               "Pack_Point":"Health Screening Report",
+               "Is_Pack_Point_Chk":true
+            },
+            {  
+               "PackID":2,
+               "Pack_Point":"Anthropometry (BMI, WH Ratio) ",
+               "Is_Pack_Point_Chk":false
+            },
+            {  
+               "PackID":2,
+               "Pack_Point":"Post Examination Review ",
+               "Is_Pack_Point_Chk":false
+            },
+            {  
+               "PackID":2,
+               "Pack_Point":"General Screening – Basic ",
+               "Is_Pack_Point_Chk":false
+            },
+            {  
+               "PackID":2,
+               "Pack_Point":"Body Composition Analysis ",
+               "Is_Pack_Point_Chk":false
+            },
+            {  
+               "PackID":2,
+               "Pack_Point":"GR Assessment &amp; Scoring ",
+               "Is_Pack_Point_Chk":false
+            },
+            {  
+               "PackID":3,
+               "Pack_Point":"Anthropometry (BMI, WH Ratio) ",
+               "Is_Pack_Point_Chk":false
+            },
+            {  
+               "PackID":3,
+               "Pack_Point":"Post Examination Review ",
+               "Is_Pack_Point_Chk":false
+            },
+            {  
+               "PackID":3,
+               "Pack_Point":"General Screening – Regular ",
+               "Is_Pack_Point_Chk":false
+            },
+            {  
+               "PackID":3,
+               "Pack_Point":"Health Screening Report",
+               "Is_Pack_Point_Chk":true
+            },
+            {  
+               "PackID":4,
+               "Pack_Point":"Anthropometry (BMI, WH Ratio) ",
+               "Is_Pack_Point_Chk":false
+            },
+            {  
+               "PackID":4,
+               "Pack_Point":"Post Examination Review ",
+               "Is_Pack_Point_Chk":false
+            },
+            {  
+               "PackID":4,
+               "Pack_Point":"General Screening – Basic ",
+               "Is_Pack_Point_Chk":false
+            },
+            {  
+               "PackID":4,
+               "Pack_Point":"Health Screening Report",
+               "Is_Pack_Point_Chk":true
+            }
+         ]
+      },
+      "Partner":{  
+         "arr":[  
+            {  
+               "Img":"../Content/Images/WebsiteCreation/Whomps_1/Partner/1.jpg",
+               "IsChangeImg":false,
+               "Ext_Img":"1.jpg"
+            },
+            {  
+               "Img":"../Content/Images/WebsiteCreation/Whomps_1/Partner/2.jpg",
+               "IsChangeImg":false,
+               "Ext_Img":"2.jpg"
+            },
+            {  
+               "Img":"../Content/Images/WebsiteCreation/Whomps_1/Partner/3.jpg",
+               "IsChangeImg":false,
+               "Ext_Img":"3.jpg"
+            },
+            {  
+               "Img":"../Content/Images/WebsiteCreation/Whomps_1/Partner/4.jpg",
+               "IsChangeImg":false,
+               "Ext_Img":"4.jpg"
+            },
+            {  
+               "Img":"../Content/Images/WebsiteCreation/Whomps_1/Partner/4.jpg",
+               "IsChangeImg":false,
+               "Ext_Img":"5.jpg"
+            }
+         ]
+      },
+      "Information":{  
+         "arr":[  
+            {  
+               "Info_Value":"Generate a Quote",
+               "Info_Link":""
+            },
+            {  
+               "Info_Value":"Choose your package",
+               "Info_Link":""
+            },
+            {  
+               "Info_Value":"Help by specialist",
+               "Info_Link":""
+            },
+            {  
+               "Info_Value":"Get POC",
+               "Info_Link":""
+            }
+         ]
+      },
+      "Contact":{  
+         "arr":[  
+            {  
+               "Contact_Value":" Monday - Saturday, 8am to 10pm",
+               "Contact_Icon":"fa fa-calendar-o fa-stack-1x fa-inverse"
+            },
+            {  
+               "Contact_Value":" +62 0888 904 711",
+               "Contact_Icon":"fa fa-phone fa-stack-1x fa-inverse"
+            },
+            {  
+               "Contact_Value":" hello@medicio.com",
+               "Contact_Icon":"fa fa-envelope-o fa-stack-1x fa-inverse"
+            }
+         ]
+      },
+      "SocailNtwk":{  
+         "arr":[  
+            {  
+               "Social_Ntwk_Href":"https://www.facebook.com/",
+               "Social_Ntwk_Name":"social-facebook",
+               "Social_Ntwk_Icon":"fa fa-facebook"
+            },
+            {  
+               "Social_Ntwk_Href":"https://www.twitter.com/",
+               "Social_Ntwk_Name":"social-twitter",
+               "Social_Ntwk_Icon":"fa fa-twitter"
+            },
+            {  
+               "Social_Ntwk_Href":"https://www.google.com/",
+               "Social_Ntwk_Name":"social-google",
+               "Social_Ntwk_Icon":"fa fa-google-plus"
+            },
+            {  
+               "Social_Ntwk_Href":"https://www.vimeo.com/",
+               "Social_Ntwk_Name":"social-vimeo",
+               "Social_Ntwk_Icon":"fa fa-vimeo-square"
+            },
+            {  
+               "Social_Ntwk_Href":"https://www.dribbble.com/",
+               "Social_Ntwk_Name":"social-dribble",
+               "Social_Ntwk_Icon":"fa fa-dribbble"
+            }
+         ]
+      }
+   },
+   "WebDetImg":null
+}

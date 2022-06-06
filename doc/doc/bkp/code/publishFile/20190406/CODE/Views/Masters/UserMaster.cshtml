@@ -1,0 +1,159 @@
+﻿
+@{
+    Layout = Layout;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<head>
+    <style>
+        .sortable {
+            cursor: pointer;
+        }
+
+        .bootstrap-tagsinput input {
+            width: 100% !important;
+        }
+    </style>
+</head>
+<script>
+    var GetCommonAutoComplete_DDL_URL = "@Url.Action("GetCommonAutoComplete_DDL", "Common")";
+    var AddUpdateUser_URL = "@Url.Action("AddUpdateUser", "Account")";
+    var DeleteUser_URL = "@Url.Action("DeleteUser", "Account")";
+    var getData = @Html.Raw(Json.Encode(@ViewBag.getData));
+    var S_Role_ID = "@Session["Role_ID"]";
+</script>
+<script src="~/Scripts/Masters/UserMaster.js"></script>
+@*================================Listing================================*@
+<div class="body-wrapper" id="div_UserMasterLst">
+    <div class="page-heading">
+        <h3 class="page-title-heading pull-left">User LISTING</h3>
+        <button class="addnew-btn pull-right" id="btn_CallAddUser">Add New</button>
+    </div>
+    <div class="clearfix"></div>
+    <div id="stickFilter" class="clearfix">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-2">
+                <div class="srchBox">
+                    <input type="text" class="srchInput" id="txt_Name" placeholder="Search Name" autocomplete="off">
+                    <button type="submit" class="fa fa-search" id="Search_Search_any"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="table-responsive">
+        <table id="tbl_UserMst"></table>
+    </div>
+</div>
+
+
+@*================================Add & update================================*@
+<div class="page-content tabView-div" id="div_AddEditUserMst" hidden>
+    <h3 class="main-heading">Add User</h3>
+    <ul class="nav nav-tabs" id="tab">
+        <li class="active"><a data-toggle="tab" href="#forsaleinfo">User Info</a></li>
+    </ul>
+    <div class="tab-content">
+        <div id="forsaleinfo" class="tab-pane fade in active box-layout-main">
+            <div class="box-layout">
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <div class="inner-box-layout">
+                        <div id="slider">
+                            <div id="carousel-bounding-box">
+                                <div class="carousel slide slider-main-div" style="border:none;" id="myCarousel" data-interval="false">
+                                    <div class="carousel-inner">
+                                        <div class="active item" data-slide-number="0">
+                                            <img id="img_UserPhoto" src="~/Content/Images/no-image.jpg" alt="na" style=" height: 412px;">
+                                            <input type="file" id="file_img_UserPhoto" class="hidden" />
+                                        </div>
+                                    </div>
+                                    <div id="div_UploadImg" class="upload-btn-section upld-img-btn">
+                                        <label class="label-upload hand" id="lbl_UploadImage">Upload Image</label>
+                                    </div>
+                                </div>
+                                <span id="lblFileError" style="color: red;"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-8 extenededLeftPadding">
+                    <div class="form-horizontal inner-box-layout">
+                        <div class="">
+                            <div class="col-md-6 col-sm-12 col-xs-12 no-padding">
+                                <div class="box-page-heading">GENERAL INFO</div>
+                            </div>
+                            <div class="col-xs-12 blockkDiv clearfix">
+                                <label class="col-xs-12 col-sm-3 col-md-2 col-lg-1 cust-label-control control-label">Email ID</label>
+                                <div class="col-xs-12 col-sm-9 col-md-10 col-lg-11 btm-mrg">
+                                    <input placeholder="Email ID" class="form-control cls_Required" id="txt_EmailID" type="text" autofocus>
+                                </div>
+                                <div class="clearfix"></div>
+                                <label class="col-xs-12 col-sm-3 col-md-2 col-lg-1 cust-label-control control-label">First Name</label>
+                                <div class="col-xs-12 col-sm-9 col-md-4 col-lg-5 btm-mrg">
+                                    <div class="input-group col-xs-12 no-padding">
+                                        <input placeholder="First Name" class="form-control cls_Required" id="txt_First_Name" type="text">
+                                    </div>
+                                </div>
+
+                                <label class="col-xs-12 col-sm-3 col-md-2 col-lg-1 cust-label-control control-label">Last Name</label>
+                                <div class="col-xs-12 col-sm-9 col-md-4 col-lg-5 btm-mrg">
+                                    <input placeholder="Middle Name" class="form-control" id="txt_LastName" name="txt_LastName" value="" type="text">
+                                </div>
+                                <div class="clearfix"></div>
+
+                                <label class="col-xs-12 col-sm-3 col-md-2 col-lg-1 cust-label-control control-label">Password</label>
+                                <div class="col-xs-12 col-sm-9 col-md-4 col-lg-5 btm-mrg">
+                                    <div class="input-group col-xs-12 no-padding">
+                                        <input placeholder="Password" class="form-control cls_Required" id="txt_Password" type="Password">
+                                    </div>
+                                </div>
+
+                                <label class="col-xs-12 col-sm-3 col-md-2 col-lg-1 cust-label-control control-label">Confirm Password</label>
+                                <div class="col-xs-12 col-sm-9 col-md-4 col-lg-5 btm-mrg">
+                                    <input placeholder="Confirm Password" class="form-control" id="txt_ConfrmPassword" name="txt_ConfrmPassword" value="" type="Password">
+                                </div>
+                                <div class="clearfix"></div>
+
+                                <label class="col-xs-12 col-sm-3 col-md-2 col-lg-1 cust-label-control control-label">Address</label>
+                                <div class="col-xs-12 col-sm-9 col-md-4 col-lg-3 btm-mrg">
+                                    <div class="yearField pull-left">
+                                        <input type="text" placeholder="Address" class="form-control cls_Required" id="txt_Address">
+                                    </div>
+                                </div>
+
+                                <label class="col-xs-12 col-sm-3 col-md-2 col-lg-1 cust-label-control control-label">Alternate Address</label>
+                                <div class="col-xs-12 col-sm-9 col-md-4 col-lg-3 btm-mrg">
+                                    <input placeholder="Alternate Address" class="form-control" id="txt_Alt_Address" type="text">
+                                </div>
+
+                                <label class="col-xs-12 col-sm-3 col-md-2 col-lg-1 cust-label-control control-label">Telphone Number</label>
+                                <div class="col-xs-12 col-sm-9 col-md-4 col-lg-3 btm-mrg">
+                                    <div class="yearField pull-left">
+                                        <input type="text" placeholder="Telphone" class="form-control" id="txt_Tel_No">
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+
+                                <label class="col-xs-12 col-sm-3 col-md-2 col-lg-1 cust-label-control control-label">Mobile</label>
+                                <div class="col-xs-6 col-sm-6 col-md-5 col-lg-5 btm-mrg">
+                                    <input placeholder="Mobile" class="form-control cls_Required" id="txt_Mobile" type="text" autofocus>
+                                </div>
+
+                                <label class="col-xs-12 col-sm-3 col-md-2 col-lg-1 cust-label-control control-label">Role</label>
+                                <div class="col-xs-6 col-sm-6 col-md-5 col-lg-5 btm-mrg">
+                                    <select id="ddl_Role" class="form-control cls_Required"></select>
+                                </div>
+                                <div class="clearfix"></div>
+
+                            </div>
+                            <div class="btn-action btn-float pull-right padding clsBtnUser">
+                                <button type="button" class="btn theme-btn-blue" data-dismiss="modal" id="btn_AddEditUser">Submit</button>
+                                <button type="button" class="btn theme-btn-grey" data-dismiss="modal" id="btn_Cancel">Cancel </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
