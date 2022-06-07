@@ -332,7 +332,6 @@ C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\W
 C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\Whomps\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
 C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\Whomps\bin\Microsoft.Owin.Security.OAuth.dll
 C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\Whomps\bin\Microsoft.Owin.Security.Twitter.dll
-C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\Whomps\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\Whomps\bin\Newtonsoft.Json.dll
 C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\Whomps\bin\Owin.dll
 C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\Whomps\bin\System.Net.Http.Formatting.dll
@@ -346,7 +345,6 @@ C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\W
 C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\Whomps\bin\System.Web.WebPages.Deployment.dll
 C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\Whomps\bin\System.Web.WebPages.dll
 C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\Whomps\bin\System.Web.WebPages.Razor.dll
-C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\Whomps\bin\WebGrease.dll
 C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\Whomps\bin\DTO.pdb
 C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\Whomps\bin\Microsoft.AI.DependencyCollector.xml
 C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\Whomps\bin\Microsoft.AI.ServerTelemetryChannel.xml
@@ -387,3 +385,15 @@ C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\W
 C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\Whomps\obj\Debug\Whomps.csproj.CopyComplete
 C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\Whomps\obj\Debug\Whomps.dll
 C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\Whomps\obj\Debug\Whomps.pdb
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\Whomps\bin\MailChimp.Net.dll
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\Whomps\bin\Newtonsoft.Json.xml
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\Whomps\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\Whomps\bin\WebGrease.dll
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\Whomps\bin\Twilio.dll
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\Whomps\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\Whomps\bin\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\Whomps\bin\Microsoft.IdentityModel.Logging.dll
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\Whomps\bin\DTO.dll.config
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\Whomps\bin\Twilio.xml
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\Whomps\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\Whomps\bin\Microsoft.IdentityModel.Tokens.xml

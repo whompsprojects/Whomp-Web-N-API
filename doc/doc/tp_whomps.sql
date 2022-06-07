@@ -63,6 +63,10 @@ http://localhost:53198/
 --==>goDady :-
 	uname :- whompsprojects@gmail.com
 	pwd :-	n01can@2012
+
+--==>https://www.twilio.com/
+	uname :- whompsprojects@gmail.com
+	pwd :- No1canVidya@2012
 				
 				
 --========================sp to be uploaded in next deployment ===============--d
@@ -78,6 +82,13 @@ http://localhost:53198/
 
 	--==> iis configuration in AWS
 	https://www.youtube.com/watch?v=OPHT0ozZOj4&t=353s
+
+	3. font awesome link :- 
+		1. https://fontawesome.com/icons 
+		2. our code for e.g operation icon :- fa fa-check fa-3x circled bg-skin 
+			font awesome :-  <i class="fa-solid fa-barcode"></i> 
+			updated  :- fa fa-barcode fa-3x circled bg-skin 
+		3. (note :- only check replace with barcode)
 
 --========================Version 2===============
 0. in team
@@ -172,11 +183,18 @@ http://localhost/WhompsApi/API/
 
 --==> pending points  :- 
 	 --> 04 Jun 2022 :- 
-	 1. handle our partner if not record there 
-	 2. remove backgorud image of no feedback is there 
-	 3. add get poc font-icon
+	 1. handle our partner if not record there --d
+	 2. remove backgorud image of no feedback is there --d
+	 3. add get poc font-icon --d
 	 4. handle the log error some time in file explorer -- rnd
-	 5. create whomps website
+	 5. create whomps website 
 	 6. gather shivam hotel website data 
 	 7. create shivam website
+
+	 8. information two edit icon --d
+	 9. remove delete confirmation --d
 		
+
+		http://localhost:53198/Website/ViewWebsite?Web_ID=30082
+
+		--==> website maker is done <==-

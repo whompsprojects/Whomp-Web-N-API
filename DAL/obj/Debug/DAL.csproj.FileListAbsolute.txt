@@ -67,3 +67,13 @@ C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\D
 C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DAL\obj\Debug\DAL.dll
 C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DAL\obj\Debug\DAL.pdb
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DAL\bin\Debug\DAL.dll.config
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DAL\bin\Debug\MailChimp.Net.dll
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DAL\bin\Debug\Twilio.dll
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DAL\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DAL\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DAL\bin\Debug\Microsoft.IdentityModel.Logging.dll
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DAL\bin\Debug\DTO.dll.config
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DAL\bin\Debug\Twilio.xml
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DAL\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DAL\bin\Debug\Microsoft.IdentityModel.Tokens.xml

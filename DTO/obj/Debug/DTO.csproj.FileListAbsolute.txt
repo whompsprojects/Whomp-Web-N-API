@@ -41,10 +41,20 @@ E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\DTO\obj\Debug\DTO.csp
 E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\DTO\obj\Debug\DTO.csproj.CopyComplete
 E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\DTO\obj\Debug\DTO.dll
 E:\whompsDrive\WhompsWebSite-git\WhompsWebSite\Code\Whomps\DTO\obj\Debug\DTO.pdb
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DTO\bin\Debug\DTO.dll.config
 C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DTO\bin\Debug\DTO.dll
 C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DTO\bin\Debug\DTO.pdb
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DTO\bin\Debug\MailChimp.Net.dll
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DTO\bin\Debug\Microsoft.IdentityModel.Logging.dll
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DTO\bin\Debug\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DTO\bin\Debug\Newtonsoft.Json.dll
-C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DTO\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DTO\bin\Debug\Twilio.dll
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DTO\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DTO\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DTO\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DTO\bin\Debug\Twilio.xml
 C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DTO\obj\Debug\DTO.csproj.CopyComplete
 C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DTO\obj\Debug\DTO.dll
 C:\Users\Sandeep Maurya\Desktop\personal\project\website-maker\Whomp-Web-N-API\DTO\obj\Debug\DTO.pdb

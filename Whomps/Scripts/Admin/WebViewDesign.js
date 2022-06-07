@@ -419,6 +419,12 @@ var SetWeb = {
         try {
             VrVw.FeedBkImgPth = '../Content/Images/WebsiteCreation/' + VrVw.Web_ID + '/FeedBk/';
             var FeedBk = $.parseJSON(VrVw.data.data).FeedBk;
+            $('#testimonial').removeClass("hidden");
+            if (FeedBk.length === 0) {
+                $('#testimonial').addClass("hidden");
+                return;
+            }
+
             VrVw.html = ''; FeedBk_Title = '', FeedBk_Rate = '', FeedBk_Desc = '', FeedBk_Img = '', FeedBk_Loctn = '', i = 0;
             var activeCur = '', endActiveCur = '', tmp = '', segrate = 3, totalLen = 0, rate_html = '';
             if ($(FeedBk).length <= 3) {
@@ -580,6 +586,11 @@ var SetWeb = {
         try {
             VrVw.PartnerImgPth = '../Content/Images/WebsiteCreation/' + VrVw.Web_ID + '/Partner/';
             var Partner_Det = $.parseJSON(VrVw.data.data).Partner;
+            $('#partner').removeClass('hidden');
+            if (Partner_Det.length === 0) {
+                $('#partner').addClass('hidden');
+                return;
+            }
             VrVw.html = ''; Partner_Img = '', i = 0;
             var activeCur = '', endActiveCur = '', tmp = '', segrate = 4, totalLen = 0;
             if ($(Partner_Det).length <= 4) {
@@ -723,7 +734,7 @@ var SetWeb = {
                 WMP_Common.PopUpErrorMsg(data.data);
                 return false;
             }
-            WMP_Common.PopUpErrorMsg("We recieve you request, will revert back soon");
+            WMP_Common.PopUpErrorMsg("Thank for contacting us. We will shortly reach you!!");
             $('[id^=lbl_FieldKey]').each(function (k, v) {
                 $(this).closest('.form-group').find('[id^=txt_FieldValue]').val('');
             });

@@ -1,5 +1,7 @@
 ﻿using DTO;
+using DTO.MailChimp;
 using DTO.Website;
+using DTO.whatapp;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
@@ -408,6 +410,11 @@ namespace Whomps.Controllers.Website
             var res = new Response();
             try
             {
+                //var objMailChimp = new MailChimp();
+                //objMailChimp.CreateAndSendCampaign("hello world");
+                //Twilios.SendWhatappMsg();
+                res = JsonConvert.DeserializeObject<Response>(objCommonAPIUtility.GetPostAsync(API.GenerateLead_URL, req).Result);
+                return Json(res);
                 string UserMailId = "";
                 WebHdr objWebHdr = new WebHdr();
                 SendMail_DTO objSendMail_DTO = new SendMail_DTO();

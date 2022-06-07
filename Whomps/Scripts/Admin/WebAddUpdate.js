@@ -129,6 +129,9 @@ var WDAd = {
             if (data.status == 'success') {
                 WMP_Common.PopUpErrorMsg('Website created successfully');
                 $('#btn_Preview').trigger('click');
+                setTimeout(() => {
+                    window.location.href = '../Website/GetWebsite';
+                },1000);
             }
             else {
                 console.log(data);
@@ -490,8 +493,14 @@ var WDAd = {
         arrData.push('txt_Pan_Card_No');
         arrData.push('txt_Company_Specialist_In');
         arrData.push('txt_Company_Address');
+        arrData.push('txt_Company_Address');
         if (!WMP_Common.ValidateTxt(arrData)) {
             WMP_Common.MsgPopUp();
+            return false;
+        }
+        if ($('#ddl_Theme').val() == 0) {
+            WMP_Common.MsgPopUp("Please select the theme");
+            $('#ddl_Theme').addClass('err');
             return false;
         }
         WebHdr.Company_Name = $('#txt_Company_Name').val();

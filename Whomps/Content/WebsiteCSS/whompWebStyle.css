@@ -2461,3 +2461,9 @@ a.btn:focus {
     height: 81px;
 }
 
+.oper-flow-edit{
+    position:absolute !important;
+        margin-top:20px;
+        margin-right:10px;
+}
+

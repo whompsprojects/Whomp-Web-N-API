@@ -308,17 +308,11 @@ var slg = {
     },
 
     Delete_Slogan: function (currThis) {
-        var ConfirmDelete = confirm("Are you sure to delete this record ?");
-        if (ConfirmDelete) {
-            $(currThis).closest('.row').remove();
-            $("[id^='a_AddSlogan']").each(function () {
-                lastControlID = this.id;
-            });
-            $("#" + lastControlID).show();
-        }
-        else {
-            return false;
-        }
+        $(currThis).closest('.row').remove();
+        $("[id^='a_AddSlogan']").each(function () {
+            lastControlID = this.id;
+        });
+        $("#" + lastControlID).show();
     },
 
 };
@@ -379,10 +373,10 @@ var oper = {
             Oper_FlowIcon = Convert.objectToString($(this).closest('.rowOper_Flow').find('[id^=txt_Oper_FlowIcon]').val(), '');
             Oper_Flow_Det = Convert.objectToString($(this).closest('.rowOper_Flow').find('[id^=txt_Oper_FlowDet]').val(), '');
             if (i == 1)
-                editIcon = '<a class="cls_EditWeb" id="a_EditOper_Flow"><i class="fa fa-edit"></i></a>';
+                editIcon = '<a class="cls_EditWeb oper-flow-edit" id="a_EditOper_Flow"><i class="fa fa-edit"></i></a>';
             else
                 editIcon = '';
-            Var_SC.html = '<div class="col-sm-3 col-md-3"> ' + editIcon + ''
+            Var_SC.html = '' + editIcon + '<div class="col-sm-3 col-md-3"> '
                 + '<div class="wow fadeInUp" data-wow-delay="0.2s">'
                 + '<div class="box text-center">'
                 + '<i class="' + Oper_FlowIcon + '" id="i_Oper_FlowIcon_' + i + '"></i>'
@@ -426,17 +420,11 @@ var oper = {
     },
 
     Delete_Oper_Flow: function (currThis) {
-        var ConfirmDelete = confirm("Are you sure to delete this record ?");
-        if (ConfirmDelete) {
-            $(currThis).closest('.rowOper_Flow').remove();
-            $("[id^='a_AddOper_Flow']").each(function () {
-                lastControlID = this.id;
-            });
-            $("#" + lastControlID).show();
-        }
-        else {
-            return false;
-        }
+        $(currThis).closest('.rowOper_Flow').remove();
+        $("[id^='a_AddOper_Flow']").each(function () {
+            lastControlID = this.id;
+        });
+        $("#" + lastControlID).show();
     },
 
 }
@@ -572,17 +560,11 @@ var prod = {
     },
 
     Delete_Products: function (currThis) {
-        var ConfirmDelete = confirm("Are you sure to delete this record ?");
-        if (ConfirmDelete) {
-            $(currThis).closest('.row').remove();
-            $("[id^='a_AddProduct']").each(function () {
-                lastControlID = this.id;
-            });
-            $("#" + lastControlID).show();
-        }
-        else {
-            return false;
-        }
+        $(currThis).closest('.row').remove();
+        $("[id^='a_AddProduct']").each(function () {
+            lastControlID = this.id;
+        });
+        $("#" + lastControlID).show();
     },
 
 }
@@ -787,17 +769,11 @@ var Team = {
     },
 
     Delete_Team: function (currThis) {
-        var ConfirmDelete = confirm("Are you sure to delete this record ?");
-        if (ConfirmDelete) {
-            $(currThis).closest('.row').remove();
-            $("[id^='a_AddTeam']").each(function () {
-                lastControlID = this.id;
-            });
-            $("#" + lastControlID).show();
-        }
-        else {
-            return false;
-        }
+        $(currThis).closest('.row').remove();
+        $("[id^='a_AddTeam']").each(function () {
+            lastControlID = this.id;
+        });
+        $("#" + lastControlID).show();
     },
 
     SetTeamImg: function (event, currThis) {
@@ -895,17 +871,11 @@ var TeamDep = {
     },
 
     DeleteDept_Team: function (currThis) {
-        var ConfirmDelete = confirm("Are you sure to delete this record ?");
-        if (ConfirmDelete) {
-            $(currThis).closest('.row').remove();
-            $("[id^='a_AddTeamDep']").each(function () {
-                lastControlID = this.id;
-            });
-            $("#" + lastControlID).show();
-        }
-        else {
-            return false;
-        }
+        $(currThis).closest('.row').remove();
+        $("[id^='a_AddTeamDep']").each(function () {
+            lastControlID = this.id;
+        });
+        $("#" + lastControlID).show();
     },
 }
 
@@ -1017,17 +987,11 @@ var Fclty = {
     },
 
     Delete_Fclty: function (currThis) {
-        var ConfirmDelete = confirm("Are you sure to delete this record ?");
-        if (ConfirmDelete) {
-            $(currThis).closest('.row').remove();
-            $("[id^='a_AddFacility']").each(function () {
-                lastControlID = this.id;
-            });
-            $("#" + lastControlID).show();
-        }
-        else {
-            return false;
-        }
+        $(currThis).closest('.row').remove();
+        $("[id^='a_AddFacility']").each(function () {
+            lastControlID = this.id;
+        });
+        $("#" + lastControlID).show();
     },
 
     Set_FcltyImg: function (event, currThis) {
@@ -1215,17 +1179,11 @@ var FeedBk = {
     },
 
     Delete_FeedBk: function (currThis) {
-        var ConfirmDelete = confirm("Are you sure to delete this record ?");
-        if (ConfirmDelete) {
-            $(currThis).closest('.row').remove();
-            $("[id^='a_AddFeedBk']").each(function () {
-                lastControlID = this.id;
-            });
-            $("#" + lastControlID).show();
-        }
-        else {
-            return false;
-        }
+        $(currThis).closest('.row').remove();
+        $("[id^='a_AddFeedBk']").each(function () {
+            lastControlID = this.id;
+        });
+        $("#" + lastControlID).show();
     },
 
     Set_Hdr_BkGrnd_Img: function (event, currThis, imgID, lmtSize) {
@@ -1449,17 +1407,11 @@ var Packs = {
     },
 
     Delete_Packs: function (currThis) {
-        var ConfirmDelete = confirm("Are you sure to delete this record ?");
-        if (ConfirmDelete) {
-            $(currThis).closest('.row').remove();
-            $("[id^='a_AddPacks']").each(function () {
-                lastControlID = this.id;
-            });
-            $("#" + lastControlID).show();
-        }
-        else {
-            return false;
-        }
+        $(currThis).closest('.row').remove();
+        $("[id^='a_AddPacks']").each(function () {
+            lastControlID = this.id;
+        });
+        $("#" + lastControlID).show();
     },
 
     //--==============Pack Point=============--//
@@ -1542,17 +1494,11 @@ var Packs = {
     },
 
     Delete_PacksPoint: function (currThis) {
-        var ConfirmDelete = confirm("Are you sure to delete this record ?");
-        if (ConfirmDelete) {
-            $(currThis).closest('.row').remove();
-            $("[id^='a_AddPointsPacks']").each(function () {
-                lastControlID = this.id;
-            });
-            $("#" + lastControlID).show();
-        }
-        else {
-            return false;
-        }
+        $(currThis).closest('.row').remove();
+        $("[id^='a_AddPointsPacks']").each(function () {
+            lastControlID = this.id;
+        });
+        $("#" + lastControlID).show();
     },
 
 
@@ -1697,8 +1643,6 @@ var Info = {
         var Info_Name = '', i = 0, edit = '';
         $('[id^=txt_Info]').each(function (k, v) {
             edit = '';
-            if (k == 0)
-                edit = '<a class="cls_EditWeb" id="a_Edit_Information"><i class="fa fa-edit"></i></a>';
             Var_SC.html += ' <li><a href="#" id="a_info_' + i + '">' + $(this).val() + '</a>' + edit + '</li>';
         });
         $('#ul_Information').html(Var_SC.html);
@@ -1779,8 +1723,6 @@ var Contact = {
             i++;
             edit_Html = '';
             contactIcon = Convert.objectToString($(this).closest('.row').find('[id^=txt_ContactIcon]').val(), '');
-            if (k == 0)
-                edit_Html = '<a class="cls_EditWeb" id="a_Edit_Contact"><i class="fa fa-edit"></i></a>';
             Var_SC.html += '<li>'
                 + '<span class="fa-stack fa-lg">'
                 + '<i class="fa fa-circle fa-stack-2x"></i>'

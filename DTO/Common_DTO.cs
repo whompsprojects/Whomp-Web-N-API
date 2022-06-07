@@ -329,7 +329,8 @@ namespace DTO
         #region Send Mail
         public static Response SendMail(SendMail_DTO req)
         {
-            var res = new Response();
+            
+               var res = new Response();
             try
             {
                 using (MailMessage mail = new MailMessage())
@@ -735,6 +736,10 @@ namespace DTO
         public static string Ntwk_EmailId = "whompsprojects@gmail.com";
         public static string Ntwk_EmailPwd = "dec@2012";
         public static string WhompsURL = "www.google.com";
+        public static string TwilioAPiKey = "AC5f18e81921dd52211a69595171ece0d0";
+        public static string TwilioToken = "e6e088548b1882d38c32ec9f41a80f83";
+
+
         static string GetDBQueryString()
         {
             if (IsLocal)
@@ -748,7 +753,7 @@ namespace DTO
         {
             if (IsLocal)
                 //prfx = "http://localhost:57704/API/";
-            prfx = "http://192.168.1.44/API/";
+                prfx = "http://localhost:81/API/";
             else
                 prfx = "http://localhost/WhompsApi/API/";
             return prfx;
